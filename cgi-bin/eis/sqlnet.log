@@ -1,0 +1,57 @@
+
+
+***********************************************************************
+Fatal NI connect error 12514, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SID=*)(SERVICE_NAME=ydoradev.)(CID=(PROGRAM=)(HOST=ydappdev)(USER=apache2)))(ADDRESS=(PROTOCOL=TCP)(HOST=ydoradev)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for Solaris: Version 8.1.7.0.0 - Production
+	TCP/IP NT Protocol Adapter for Solaris: Version 8.1.7.0.0 - Production
+  Time: 05-OCT-2009 08:34:30
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: Message 12564 not found; No message file for product=network, facility=TNS
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12514, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SID=*)(SERVICE_NAME=ydoradev.)(CID=(PROGRAM=)(HOST=ydappdev)(USER=apache2)))(ADDRESS=(PROTOCOL=TCP)(HOST=ydoradev)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for Solaris: Version 8.1.7.0.0 - Production
+	TCP/IP NT Protocol Adapter for Solaris: Version 8.1.7.0.0 - Production
+  Time: 05-OCT-2009 08:34:37
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: Message 12564 not found; No message file for product=network, facility=TNS
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12514, connecting to:
+ (DESCRIPTION=(CONNECT_DATA=(SID=*)(SERVICE_NAME=ydoradev.)(CID=(PROGRAM=)(HOST=ydappdev)(USER=apache2)))(ADDRESS=(PROTOCOL=TCP)(HOST=ydoradev)(PORT=1521)))
+
+  VERSION INFORMATION:
+	TNS for Solaris: Version 8.1.7.0.0 - Production
+	TCP/IP NT Protocol Adapter for Solaris: Version 8.1.7.0.0 - Production
+  Time: 07-OCT-2009 13:28:33
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: Message 12564 not found; No message file for product=network, facility=TNS
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0

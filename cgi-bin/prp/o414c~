@@ -1,0 +1,391 @@
+sourcerequirement_id_seq.next	58	4	REQUIREMENTS
+sourcerequirement_id_seq.next	58	4.a	Quality Assurance Program (QAP) Requirements.  Each DOE organization must develop and implement a QAP that does the following:
+sourcerequirement_id_seq.next	58	4.a.(1)	Implements QA criteria as defined in paragraph 4b using a graded approach and describing how the criteria and graded approach are applied (see section 6.0 for applicable references).
+sourcerequirement_id_seq.next	58	4.a.(2)	Use national or international consensus standards where practicable and consistent with contractual or regulatory requirements (e.g., 10 CFR 830) and identifies the standards used.  Appropriate standards include the following.
+sourcerequirement_id_seq.next	58	4.a.(2)(a)	ASME NQA-1-2000, Quality Assurance Requirements for Nuclear Facility Applications (for nuclear-related activities).
+sourcerequirement_id_seq.next	58	4.a.(2)(b)	ANSI/ISO/ASQ Q 9001-2000, Quality Management System: Requirements (for non-nuclear activities); and
+sourcerequirement_id_seq.next	58	4.a.(2)(c)	ANSI/ASQ Z 1.13, Quality Guidelines for Research, 1999 (for non-nuclear research activities).
+sourcerequirement_id_seq.next	58	4.a.(3)	Applies additional standards, where practicable and consistent with contractual or regulatory requirements and as necessary to address unique/specific work activities (e.g., development and use of safety software or establishing the competence of a testing and calibration laboratory).  [Note:  These standards are sometimes referred to as 'voluntary standards.'  However, once a practicable standard(s) is adopted through regulation, code, contract, QAP, or procedure; compliance with the required and is not voluntary.]
+sourcerequirement_id_seq.next	58	4.a.(4)	Integrates, where practicable and consistent with contract or regulatory requirements, quality management system requirements as defined in this Order, the S/CI prevention process (Attachment 3), the Corrective Action Program (CAMP, Attachment 4), and Safety Software Quality Requirements (Attachment 5) with other quality or management system requirements in DOE directives and external requirements, including as applicable -
+sourcerequirement_id_seq.next	58	4.a.(4)(a)	DOE P 450.4, Safety Management System Policy, dated 10-15-96;
+sourcerequirement_id_seq.next	58	4.a.(4)(b)	DOE P 450.5, Line Environment, Safety and Health Oversight, dated 06-26-97;
+sourcerequirement_id_seq.next	58	4.a.(4)(c)	NNSA Quality Management Policy, QC-1, (quality management system for the nuclear weapons complex and weapons-related activities);
+sourcerequirement_id_seq.next	58	4.a.(4)(d)	DOE/RW-0333P DOE Office of Civilian Radioactive Waste Management, Quality Assurance and Requirements and Description; and
+sourcerequirement_id_seq.next	58	4.a.(4)(e)	DOE/CBFO-94-1012, DOE Carlsbad Field Office, Quality Assurance Program Description, (for the Waste Isolation Pilot Plant and related activities). NOTE:  This integration requirement does not establish or imply a hierarchy of quality requirements or programs.
+sourcerequirement_id_seq.next	58	4.b	QUALITY ASSURANCE CRITERIA The QAP must address the following management, performance, and assessment criteria.
+sourcerequirement_id_seq.next	58	4.b.(1)	Management/Criterion 1 -  PROGRAM
+sourcerequirement_id_seq.next	58	4.b.(1)(a)	Establish an organizational structure, functional responsibilities, levels of authority, and interfaces for those managing, performing, and assessing work.  
+sourcerequirement_id_seq.next	58	4.b.(1)(b)	Establish management processes, including planning, scheduling, and providing resources for work.
+sourcerequirement_id_seq.next	58	4.b.(2)	Management/Criterion 2 -  PERSONNEL TRAINING and QUALIFICATION
+sourcerequirement_id_seq.next	58	4.b.(2)(a)	Train and qualify personnel to be capable of performing assigned work.  
+sourcerequirement_id_seq.next	58	4.b.(2)(b)	Provide continuing training to personnel to maintain job proficiency.
+sourcerequirement_id_seq.next	58	4.b.(3)	Management/Criterion 3 -  QUALITY IMPROVEMENT
+sourcerequirement_id_seq.next	58	4.b.(3)(a)	Establish and implement processes to detect and prevent quality problems.
+sourcerequirement_id_seq.next	58	4.b.(3)(b)	Identify, control, and correct items, services, and processes that do not meet established requirements.
+sourcerequirement_id_seq.next	58	4.b.(3)(c)	Identify the causes of problems and include prevention of recurrence as a part of corrective action planning.
+sourcerequirement_id_seq.next	58	4.b.(3)(d)	Review item characteristics, process implementation, and other quality-related information to identify items, services, and processes needing improvement.
+sourcerequirement_id_seq.next	58	4.b.(4)	Management/Criterion 4 -  DOCUMENTS AND RECORDS
+sourcerequirement_id_seq.next	58	4.b.(4)(a)	Prepare, review, approve, issue, use, and revise documents to prescribe processes, specify requirements, or establish design.
+sourcerequirement_id_seq.next	58	4.b.(4)(b)	Specify, prepare, review, approve, and maintain records.
+sourcerequirement_id_seq.next	58	4.b.(5)	Performance/Criterion 5 - WORK PROCESSES
+sourcerequirement_id_seq.next	58	4.b.(5)(a)	Perform work consistent with technical standards, administrative controls, and hazard controls adopted to meet regulatory or contract requirements using approved instructions, procedures, etc.
+sourcerequirement_id_seq.next	58	4.b.(5)(b)	Identify and control items to ensure their proper use.
+sourcerequirement_id_seq.next	58	4.b.(5)(c)	Maintain items to prevent their damage, loss, or deterioration.
+sourcerequirement_id_seq.next	58	4.b.(5)(d)	Calibrate and maintain equipment used for process monitoring or data collection.
+sourcerequirement_id_seq.next	58	4.b.(6)	Performance/Criterion 6 -  DESIGN
+sourcerequirement_id_seq.next	58	4.b.(6)(a)	Design items and processes using sound engineering / scientific principles and appropriate standards.
+sourcerequirement_id_seq.next	58	4.b.(6)(b)	Incorporate applicable requirements and design bases in design work and design changes.
+sourcerequirement_id_seq.next	58	4.b.(6)(c)	Identify and control design interfaces.
+sourcerequirement_id_seq.next	58	4.b.(6)(d)	Verify/validate the adequacy of design products using individuals or groups other than those who performed the work.
+sourcerequirement_id_seq.next	58	4.b.(6)(e)	Verify/validate work before approval and implementation of the design.
+sourcerequirement_id_seq.next	58	4.b.(7)	Performance/Criterion 7 - PROCUREMENT
+sourcerequirement_id_seq.next	58	4.b.(7)(a)	Procure items and services that meet established requirements and perform as specified.
+sourcerequirement_id_seq.next	58	4.b.(7)(b)	Evaluate and select prospective suppliers on the basis of specified criteria.
+sourcerequirement_id_seq.next	58	4.b.(7)(c)	Establish and implement processes to ensure that approved suppliers continue to provide acceptable items and services.
+sourcerequirement_id_seq.next	58	4.b.(8)	Performance/Criterion 8 -  INSPECTION and ACCEPTANCE TESTING
+sourcerequirement_id_seq.next	58	4.b.(8)(a)	Inspect and test specified items, services, and processes using established acceptance and performance criteria.
+sourcerequirement_id_seq.next	58	4.b.(8)(b)	Calibrate and maintain equipment used for inspections and tests.
+sourcerequirement_id_seq.next	58	4.b.(9)	Assessment/Criterion 9 - MANAGEMENT ASSESSMENT
+sourcerequirement_id_seq.next	58	4.b.(9)	Ensure that managers assess their management processes and identify and correct problems that hinder the organization from achieving its objectives.	
+sourcerequirement_id_seq.next	58	4.b.(10)	Assessment/Criterion 10 -  INDEPENDENT ASSESSMENT
+sourcerequirement_id_seq.next	58	4.b.(10)(a)	Plan and conduct independent assessments to measure item and service quality and the adequacy of work performance, and to promote improvement.
+sourcerequirement_id_seq.next	58	4.b.(10)(b)	Establish sufficient authority and freedom from line management for independent assessment teams.
+sourcerequirement_id_seq.next	58	4.b.(10)(c)	Ensure that persons conducting independent assessments are technically qualified and knowledgeable in the areas to be assessed.
+sourcerequirement_id_seq.next	58	5	RESPONSIBILITIES; QAP implementation, assessment, and improvement are senior management responsibilities.
+sourcerequirement_id_seq.next	58	5.a	Deputy Secretary.  Provides leadership for QA implementation issues and quality problem resolution with the support of the Office of Environment, Safety and Health.
+sourcerequirement_id_seq.next	58	5.b	Secretarial Officers.  
+sourcerequirement_id_seq.next	58	5.b.(1)	Ensure that Headquarters, field elements, and contractors implement requirements of this Order in an integrated manner, and coordinate the resolution of quality issues among these organizations.
+sourcerequirement_id_seq.next	58	5.b.(2)	Develop, approve, and implement QAPs governing the work of their organizations, including safety software development/use, in accordance with requirements defined in paragraph 4, S/CI prevention requirements (Attachment 3), CAMP requirements (Attachment 4), and Safety Software Quality requirements (Attachment 5).  Identify the senior management position specifically assigned this responsibility.  
+sourcerequirement_id_seq.next	58	5.b.(3)	Provide direction and resources for implementing the requirements for work within their purview.
+sourcerequirement_id_seq.next	58	5.b.(4)	Review and approve new and revised field elements QAPs.  [NOTE: The scope and rigor of a review must be graded according to the status of prior quality performance (e.g., past requlatory/contract noncompliance, performance metrics, or any third-party QAP certification).]
+sourcerequirement_id_seq.next	58	5.b.(5)	Review and approve new and revised contractor QAPs within their purview or delegate authority to the field element manager.  [NOTE: The scope and rigor of a review must be graded according to the status of prior quality performance (e.g., past requlatory/contract noncompliance, performance metrics, or any third-party QAP certification).]
+sourcerequirement_id_seq.next	58	5.b.(6)	Review/resolve differences of opinion and approve or reject QAPs within 90 calendar days of receipt.
+sourcerequirement_id_seq.next	58	5.b.(7)	Report management assessment results periodically to the Deputy Secretary and Assistant Secretary for Environment, Safety and Health describing the effectiveness of QA implementation.
+sourcerequirement_id_seq.next	58	5.b.(8)	Provide the contracting officer necessary information and direction in order to specify -
+sourcerequirement_id_seq.next	58	5.b.(8)(a)	each procurement requiring application of the CRD to this Order and 10 CFR 830 Subpart A,
+sourcerequirement_id_seq.next	58	5.b.(8)(b)	requirements for flow down of provisions of the CRD to subcontractors or sub-awards, and
+sourcerequirement_id_seq.next	58	5.b.(8)(c)	provisions of the CRD with which contractors or subcontractors are to comply.
+sourcerequirement_id_seq.next	58	5.b.(9)	Approve CAMP Corrective Action Plans (CAPs) developed by the FEM within 60 calendar days from the date the assessment report was issued.
+sourcerequirement_id_seq.next	58	5.c.	Field Element Managers
+sourcerequirement_id_seq.next	58	5.c.(1)	Develop and implement approved QAPs governing the work under their purview, including software development/use, in accordance requirements defined in paragraph 4 of this Order, S/CI prevention requirements (Attachment 3), CAP requirements (Attachment 4), and Safety Software Quality requirements (Attachment 5).  Identify the senior management position assigned this responsibility.
+sourcerequirement_id_seq.next	58	5.c.(2)	Submit QAPs to the appropriate Secretarial Officers for review, resolution of differences of opinion, and approval.
+sourcerequirement_id_seq.next	58	5.c.(3)	Review and, where delegated authority to do so, approve new and revised QAPs for contractors within their purview.  [NOTE:  The scope and rigor of review must be graded based on the status of the contractor?s prior quality performance (e.g., past regulatory/contract noncompliance, performance metrics, or any third-party QAPP certification).  QAPs must be reviewed and approved or rejected within 90 calendar days of receipt.]
+sourcerequirement_id_seq.next	58	5.c.(4)	Perform independent assessments of contractor organizations to evaluate the adequacy and QAP implementation effectiveness.  Other suitable methods may be used in combination with independent assessments.  [NOTE:  The frequency and scope of assessments must be graded based on the status of prior quality performance and any third-party QAP certification.  Other suitable methods may be used in combination with independent assessments.]
+sourcerequirement_id_seq.next	58	5.c.(5)	Periodically report management assessment results to their organizations Secretarial Officers describing the effectiveness of field element and contractor QA implementation.
+sourcerequirement_id_seq.next	58	5.c.(6)	Prepare and implement a CAP to address all findings documented in the CAMP, and enter, track, and report the status of the CAP in the Corrective Action Tracking System (CATS).
+sourcerequirement_id_seq.next	58	5.c.(7)	Complete the CAP and conduct follow-up review on the effectiveness of the corrective actions in resolving and preventing recurrence of all findings.   Approve the effectiveness review report and follow-up report recommendations.
+sourcerequirement_id_seq.next	58	5.d.	Contracting Officers.  Include the CRD in contracts falling within the scope of this Order in a timely manner, as directed by the Secretarial Officers.
+sourcerequirement_id_seq.next	58	5.e.	Assistant Secretary for Environment, Safety and Health.  Acts as DOE?s independent element responsible for safety aspects relative to public and worker health and safety and environmental protection.  The Assistant Secretary has the following QA responsibilities in addition to Secretarial Officers duties prescribed in paragraph 5b.
+sourcerequirement_id_seq.next	58	5.e.(1)	Quality Policy.
+sourcerequirement_id_seq.next	58	5.e.(1)(a)	Develops and maintains QA policy requirements (including DOE O 414.1C and 10 CFR 830 Subpart A, Quality Assurance), guides, and standards for all DOE work.
+sourcerequirement_id_seq.next	58	5.e.(1)(b)	Provides advice and assistance to DOE elements and contractors concerning implementation of DOE O 414.1C.
+sourcerequirement_id_seq.next	58	5.e.(1)(c)	Serves as central point of contact for coordination within DOE and liaison with other agencies and groups for the development of QA policy, requirements, guides, and standards.
+sourcerequirement_id_seq.next	58	5.e.(1)(d)	Reviews proposed statutes, regulations, standards, DOE directives, and Defense Nuclear Facilities Safety Board documents for applicability to and potential impact on DOE quality programs.
+sourcerequirement_id_seq.next	58	5.e.(2)	Quality Program Support.
+sourcerequirement_id_seq.next	58	5.e.(2)(a)	Identifies and proposes resolutions for crosscutting QA issues within the Department to improve implementation.
+sourcerequirement_id_seq.next	58	5.e.(2)(b)	Submits to the Deputy Secretary periodic line management updates from Secretarial Officers (ref. paragraph 5b7) on the effectiveness of QA policy implementation across the Department.
+sourcerequirement_id_seq.next	58	5.e.(2)(c)	Manages the DOE S/CI prevention process (Attachment 3).
+sourcerequirement_id_seq.next	58	5.e.(2)(d)	Manages the DOE Safety Software Central Registry (Attachment 5).
+sourcerequirement_id_seq.next	58	5.e.(3)	CAMP  and Corrective Action Tracking System (CATS).  
+sourcerequirement_id_seq.next	58	5.e.(3)(a)	Manages CAMP and develops and maintains CAMP policies, procedures, and guidelines (Attachments 4).
+sourcerequirement_id_seq.next	58	5.e.(3)(b)	Maintains the CATS and assists Field Element Managers (FEM) in accessing and editing CAP data.  Maintains a CAMP Web site that provides background and information on the program.
+sourcerequirement_id_seq.next	58	5.e.(3)(c)	Coordinates status and maintenance of CAMP (CAP) with Secretarial Officers (SO), FEM, and assessing organizations, including periodic reports on program status.  
+sourcerequirement_id_seq.next	58	5.e.(3)(d)	Sponsors and co-chairs the DOE Corrective Action Management (CAM) Team.
+sourcerequirement_id_seq.next	58	5.e.(3)(e)	Manages crosscutting issues as directed by the Secretary or Deputy Secretary.
+sourcerequirement_id_seq.next	58	5.f.	Director, Office of Aviation Management.  Conducts safety management assessments of DOE aviation facilities and reports assessment results to the Assistant Secretary for Environment, Safety and Health and the assessed organization.
+sourcerequirement_id_seq.next	58	5.g.	Director, Office of Independent Oversight and Performance Assurance.
+sourcerequirement_id_seq.next	58	5.g.(1)	Conducts various independent assessments of Secretarial Officers, field element, and contractor implementation of this DOE O 414.1C and 10 CFR 830 Subpart A, Quality Assurance (see DOE O 470.2B, Independent Oversight and Performance Assurance Program, dated 10-31-02), including aspects of QA related  to environment, safety, health, safeguards, and security.
+sourcerequirement_id_seq.next	58	5.g.(2)	Reports assessment results to the appropriate Under Secretary, the Assistant Secretary for Environmental, Safety and Health, and the assessed organizations.
+sourcerequirement_id_seq.next	58	6	REFERENCES.  The following provide guidance and requirements for implementing this Order.
+sourcerequirement_id_seq.next	58	6.a.	DOE G 414.1-1A,  Management Assessment and Independent Assessment Guide for Use with 10 CFR     Part 830, Subpart A, and DOE O 414.1A, Quality Assurance; DOE P 450.4, Safety Management System Policy; and DOE P 450.5, Line ES&H Oversight Policy, dated 5-31-01.
+sourcerequirement_id_seq.next	58	6.b.	DOE G 414.1-2A, Quality Assurance Management System Guide for Use with 10 CFR 830 Subpart A and DOE O 414.1C, Quality Assurance, dated 6-17-05.
+sourcerequirement_id_seq.next	58	6.c.	DOE G 414.1-3, Suspect/Counterfeit Items Guide for Use with 10 CFR 830 Subpart A, Quality Assurance Requirements, and DOE O 414.1B, Quality Assurance, dated 11-03-04.
+sourcerequirement_id_seq.next	58	6.d.	DOE G 414.1-4, Safety Software Guide for Use with 10 CFR 830 Subpart A, Quality Assurance Requirements, and DOE O 414.1C, Quality Assurance, dated 6-17-05.
+sourcerequirement_id_seq.next	58	6.e.	DOE M 411.1-1C, Safety Management Functions, Responsibilities, and Authorities Manual, dated 12-31-03.
+sourcerequirement_id_seq.next	58	6.f.	P.L. 106-65, Department of Defense Authorization Act of 2000.
+sourcerequirement_id_seq.next	58	7	DEFINITIONS.  Definitions cited herein are verbatim from DOE O 414.1C, which may in certain cases duplicate the exact term cited in QARD R17 and annotated by *.
+sourcerequirement_id_seq.next	58	7.a.	*Acceptance Testing.  The process of exercising or evaluating a system or system component by manual or automated means to ensure that it satisfies the specified requirements and to identify differences between expected and actual results in the operating environment.  (ASME NQA-1-2000)
+sourcerequirement_id_seq.next	58	7.b.	Administrative Controls.  The provisions relating to organization and management, procedures, record keeping, assessment, and reporting necessary to ensure safe operation of a facility.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.c.	Assessment.  A review, evaluation, inspection, test, check, surveillance, or audit to determine and document whether items, processes, systems, or services meet specified requirements and perform effectively.
+sourcerequirement_id_seq.next	58	7.d.	*Configuration Management.  The process of identifying and defining the configuration items in a system (i.e., software and hardware), controlling the release and change of these items throughout the system?s life cycle, and recording and reporting the status of configuration items and change requests.  (ASME NQA-1-2000)
+sourcerequirement_id_seq.next	58	7.e.	Graded Approach.  The process of ensuring that the levels of analyses, documentation, and actions used to comply with requirements are commensurate with - (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.e.(1)	the relative importance to safety, safeguards, and security;
+sourcerequirement_id_seq.next	58	7.e.(2)	the magnitude of any hazard involved;
+sourcerequirement_id_seq.next	58	7.e.(3)	the life-cycle stage of a facility or item;
+sourcerequirement_id_seq.next	58	7.e.(4)	the programmatic mission of a facility;
+sourcerequirement_id_seq.next	58	7.e.(5)	the particular characteristics of a facility or item;
+sourcerequirement_id_seq.next	58	7.e.(6)	the relative importance to radiological and non-radiological hazards; and
+sourcerequirement_id_seq.next	58	7.e.(7)	any other relevant factors.
+sourcerequirement_id_seq.next	58	7.f.	Hazard Controls.  Measures to eliminate, limit, or mitigate hazards to workers, the public, or the environment, including - (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.f.(1)	physical, design, structural, and engineering features;
+sourcerequirement_id_seq.next	58	7.f.(2)	safety structures, systems, and components;
+sourcerequirement_id_seq.next	58	7.f.(3)	safety management programs;
+sourcerequirement_id_seq.next	58	7.f.(4)	technical safety requirements; and
+sourcerequirement_id_seq.next	58	7.f.(5)	other controls necessary to provide adequate protection from hazards.
+sourcerequirement_id_seq.next	58	7.g.	*Item.  An all-inclusive term used in place of appurtenance, assembly, component, equipment, material, module, part, structure, product, software, subassembly, subsystem, system, unit, or support systems.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.h.	Nuclear Facility.  A reactor or a nonreactor nuclear facility where an activity is conducted for or on behalf of DOE and includes any related area, structure, facility, or activity to the extent necessary to ensure proper implementation of the requirements established by 10 CFR 830.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.i.	*Process.  A series of actions that achieves an end result.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.j.	Quality.  The condition achieved when an item, service, or process meets or exceeds the user?s requirements and expectations.
+sourcerequirement_id_seq.next	58	7.k.	*Quality Assurance.  All those actions that provide confidence that quality is achieved.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.l.	Quality Assurance Program.  The overall program or management system established to assign responsibilities and authorities, define policies and requirements, and provide for the performance and assessment of work.
+sourcerequirement_id_seq.next	58	7.m.	Safety.  An all inclusive term used synonymously with environment, safety, and health to encompass protection of the public, the workers, and the environment.
+sourcerequirement_id_seq.next	58	7.n.	Safety Management Program.  A program designed  to ensure a facility is operated in a manner that adequately protects workers, the public, and the environment by covering a topic such as quality assurance; maintenance of safety systems; personnel training; conduct of operations; inadvertent criticality protection; emergency preparedness; fire protection; waste management; or radiological protection of workers, the public, and the environment.
+sourcerequirement_id_seq.next	58	7.o.	Safety Software.  Includes the following.
+sourcerequirement_id_seq.next	58	7.o.(1)	Safety System Software.  Software for a nuclear facility(2) that performs a safety function as part of a structure, system, or component and is cited in either (a) a DOE approved documented safety analysis or (b) an approved hazard analysis per DOE P 450.4, Safety Management System Policy, dated 10-15-96, and the DEAR clause. (2) Per 10 CFR 830, quality assurance requirements apply to all DOE nuclear facilities including radiological facilities (see 10 CFR 830, DOE STD 1120, and the DEAR ISMS clause).
+sourcerequirement_id_seq.next	58	7.o.(2)	Safety and Hazard Analysis Software and Design Software.  Software that is used to classify, design, or analyze nuclear facilities.  This software is not part of a structure, system, or component (SSC) but helps to ensure the proper accident or hazards analysis of nuclear facilities or an SSC that performs a safety function.
+sourcerequirement_id_seq.next	58	7.o.(3)	Safety Management and Administrative Controls Software.  Software that performs a hazard control function in support of nuclear facility or radiological safety management programs or technical safety requirements or other software that performs a control function necessary to provide adequate protection from nuclear facility or radiological hazards.  This software supports eliminating, limiting, or mitigating nuclear hazards to workers, the public, or the environment as addressed in 10 CFR 830, 10 CFR 835, and the DEAR ISMS clause.
+sourcerequirement_id_seq.next	58	7.p.	*Service.  Work   , such as  design, construction, fabrication, decontamination, environmental, remediation, waste management, laboratory sample analysis, safety software development/validation/testing, inspection, nondestructive examination/testing, environmental qualification, equipment qualification, training, assessment, repair, and installation or the like.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.q.	*Software.  Computer programs, procedures, and associated documentation and data pertaining to the operation of a computer system.  (NQA-1-2000)
+sourcerequirement_id_seq.next	58	7.r.	Suspect/Counterfeit Items (S/CIs).  An item is suspect when inspection or testing indicates that it may not conform to established Government or industry-accepted specifications or national consensus standards or whose documentation, appearance, performance, material, or other characteristics may have been misrepresented by the supplier or manufacturer.  A counterfeit item is one that has been copied or substituted without legal right or authority or whose material, performance, or characteristic have been misrepresented by the supplier or manufacturer.  Items that do not conform to established requirements are not normally considered S/CIs if nonconformity results from one or more of the following conditions (which must be controlled by site procedures as nonconforming items):
+sourcerequirement_id_seq.next	58	7.r.(1)	defects resulting from inadequate design or production quality control;
+sourcerequirement_id_seq.next	58	7.r.(2)	damage during shipping, handling, or storage;
+sourcerequirement_id_seq.next	58	7.r.(3)	improper installation;
+sourcerequirement_id_seq.next	58	7.r.(4)	deterioration during service;
+sourcerequirement_id_seq.next	58	7.r.(5)	degradation during removal;
+sourcerequirement_id_seq.next	58	7.r.(6)	failure resulting from aging or misapplication; or
+sourcerequirement_id_seq.next	58	7.r.(7)	other controllable causes.
+sourcerequirement_id_seq.next	58	7.s.	Technical Safety Requirements.  The limits, controls, and related actions that establish the specific parameters and requisite actions for the safe operation of a nuclear facility and include, as appropriate for the work and the hazards identified in the documented safety analysis for the facility: safety limits, operating limits, surveillance requirements, administrative and management controls, use and application provisions, and design features, as well as a bases appendix.  (10 CFR 830)
+sourcerequirement_id_seq.next	58	7.t.	Verification and Validation.  The process of determining whether the requirements for a system or component are complete and correct, the products of each development phase fulfill the requirements or conditions imposed by the previous phase, and the final system or component complies with specified requirements.  (IEEE Std-610.12-1990)
+sourcerequirement_id_seq.next	58	7.u.	*Work.  A defined task or activity such as research and development; operations; environmental remediation; maintenance and repair; administration; safety software development, validation, testing, and use; inspection; safeguards and security; or data collection and analysis.
+sourcerequirement_id_seq.next	58	Attachment 1	PRIMARY DOE ORGANIZATIONS TO WHICH DOE O 414.1C IS APPLICABLE
+sourcerequirement_id_seq.next	58	Attachment 1-a	Office of Civilian Radioactive Waste Management; et. al.
+sourcerequirement_id_seq.next	58	Attachment 2	CONTRACTOR REQUIREMENTS DOCUMENT DOE O 414.1C, QUALITY ASSURANCE
+sourcerequirement_id_seq.next	58	Attachment 2; Intro	Regardless of the performer of the work, the contractor is responsible for complying with the requirements of this Contractor Requirements Document (CRD).  The contractor is responsible for flowing down the requirements of this CRD to subcontractors at any tier to the extent necessary to ensure the contractor?s compliance with the requirements and the safe performance of work.  When the contractor conducts activities or provides items or services that affect or may affect the safety of DOE, including National Nuclear Security Administration (NNSA), nuclear facilities, it must conduct work in accordance with the quality assurance (QA) requirements of 10 CFR 830 Subpart A.\n This CRD includes a requirement to integrate multiple QA program (QAP) drivers imposed by QA regulations [see Title 10 Code of Federal Regulations (CFR) 830], the Nuclear Regulatory Commission, and other Federal agencies.  The CRD includes activity-specific requirements for work that also may need to comply with QA regulations.  This integration requirement supplements but does not supersede or alter compliance with QA regulations.  Where a work activity, process, or item is specifically identified as within the scope of a QA regulation (e.g., 10 CFR 830 or 10 CFR 63), that regulation prevails.  In the event of a conflict between this CRD and any QA regulation, the regulation prevails.   [See QAP integration requirement, paragraph 2a(4) below.]
+sourcerequirement_id_seq.next	58	Attachment 2; 1	OBJECTIVES.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.a.	To ensure that DOE, including NNSA, products and services meet or exceed customers? expectations.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.b.	To achieve QA for all work based upon the following principles.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.b.(1)	That quality is assured and maintained through a single, integrated, effective QA program (i.e., management system).
+sourcerequirement_id_seq.next	58	Attachment 2; 1.b.(2)	That management support for planning, organization, resources, direction, and control is essential to QA.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.b.(3)	That performance and quality improvement require thorough rigorous assessment and corrective action.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.b.(4)	That workers are responsible for achieving and maintaining quality.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.b.(5)	That environmental, safety, and health risks and impacts associated with work processes are minimized while maximizing reliability and performance of work products.
+sourcerequirement_id_seq.next	58	Attachment 2; 1.c.	To establish quality process requirements to be implemented under a QAP for the control of suspect/counterfeit items (S/CIs) and control of safety software.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.	GENERAL QUALITY REQUIREMENTS
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a	Quality Assurance Program Development and Implementation.  A contractor must assign and identify a senior management position responsible for the   development, implementation, assessment, and improvement of a QAP that does the following.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(1)	Implements QA criteria as defined in paragraph 3 of this CRD, S/CI prevention requirements as defined in paragraph 4, and safety software as defined in paragraph 5, using a graded approach and describing how the QA criteria and graded approach are applied.  See paragraph 2 of this CRD for guidance on compliance.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(2)	Uses the appropriate national or international consensus standard where practicable and consistent with contractual or regulatory requirements, and identifies the standard used.  Appropriate standards include the following.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(2)(a)	ASME NQA-1-2000, Quality Assurance Requirements for Nuclear Facility Applications (for nuclear-related activities).
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(2)(b)	ANSI/ISO/ASQ Q 9001-2000, Quality Management System: Requirements (for non-nuclear activities).
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(2)(c)	ANSI/ASQ Z 1.13, 1999, Quality   Guidelines for Research, (for non-nuclear research activities).
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(3)	Applies additional standards, where practicable and consistent with contractual or regulatory requirements and as necessary to address unique/specific work activities (e.g., development and use of safety software or establishing the competence of a testing and calibration laboratory).  [Note: These standards are sometimes referred to as voluntary standards.  However, once the practicable standard(s) is adopted through regulation, code, contract, QAP, or procedure, compliance with the standard is required and is not voluntary.]
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)	Integrates, where practicable and consistent with contract or regulatory requirements, quality management system requirements as defined in this CRD, the S/CI prevention process (paragraph 4) and Safety Software Quality Requirements (paragraph 5) with other quality or management system requirements in DOE directives and external requirements, including as applicable -
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)(a)	DOE P 450.4, Safety Management System Policy, dated 10-15-96.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)(b)	DOE P 450.5, Line Environment, Safety and Health Oversight, dated 06-26-97.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)(c)	NNSA Quality Management Policy, QC-1, (quality management system for the nuclear weapons-related activities).
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)(d)	DOE/RW-0333P, DOE Office of Civilian Radioactive Waste Management, Quality Assurance Requirements and Description.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)(e)	DOE/CBFO-94-1012, DOE Carlsbad Field Office, Quality Assurance Program Description, (for the Waste Isolation Pilot Plant and related activities).
+sourcerequirement_id_seq.next	58	Attachment 2; 2.a.(4)(e)-1	NOTE:  This integration requirement does not establish   or imply a hierarchy of quality requirements or programs.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.	Quality Assurance Program Approvals and Changes.  The contractor must -
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(1)	Submit a QAP to DOE for approval before beginning work under a DOE contract.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(2)	Implement the QAP as approved and modified by DOE.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(3)	Indicate in the submittal any third-party certification affecting the QAP.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(4)	Revise an existing QAP that was approved in accordance with previous versions of this CRD (e.g., CRD to DOE O 414.1B, Quality Assurance, dated 04-29-04) to address enhancements required by this CRD.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(5)	Regard a QAP as approved by DOE 90 calendar days after DOE receipt, unless approved or rejected by DOE at an earlier date, and include any modification made or directed by DOE.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(6)	Submit QAP changes made   the previous year annually to DOE for review and approval.  In the submittal, identify the changes, the reason for the changes, and the basis for concluding that the revised QAP continues to satisfy the requirements of this CRD.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(6)(a)	The contractor may make changes to an approved QAP at any time.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(6)(b)	Editorial changes made to correct spelling, punctuation, grammar, etc., do not require explanation.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.c.	Quality Guidance Usage.  The contractor must consider QA guidance in developing and implementing a QAP.  The following guidance documents (most recent revisions) are available at http://www.directives.doe.gov/.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(1)	DOE G 414.1-1A, Management Assessment and Independent Assessment Guide for Use with 10 CFR Part 830, Subpart A, and DOE O 414.1A, Quality Assurance; DOE P 450.4, Safety Management System Policy; and DOE P 450.5, Line ES&H Oversight Policy, dated 05-31-01.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(2)	DOE G 414.1-2A, Quality Assurance Management System Guide for Use with 10 CFR 830 Subpart A Quality Assurance Requirements and DOE O 414.1C, Quality Assurance, dated 06-17-05.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(3)	DOE G 414.1-3, Suspect/Counterfeit Items Guide for Use with 10 CFR 830 Subpart A, Quality Assurance Requirements, and DOE O 414.1B, Quality Assurance, dated 11-03-04.
+sourcerequirement_id_seq.next	58	Attachment 2; 2.b.(4)	DOE G 414.1-4, Safety Software Guide for use with 10 CFR 830 Subpart A, Quality Assurance Requirements, and DOE O 414.1C, Quality Assurance, dated 06-17-05.
+sourcerequirement_id_seq.next	58	Attachment 2; 3.	QUALITY ASSURANCE CRITERIA.  The QAP must address the following management, performance, and assessment criteria. SAME AS PRESENTED EARLIER UNDER SECTIONS 4.B. THROUGH 4.B.(10)(C).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.	DOE-WIDE SUSPECT/COUNTERFEIT ITEM PREVENTION PROCESS.  The process is operated by the DOE Office of Environment, Safety and Health as a service to DOE and its contractors and provides for collecting, analyzing, and disseminating S/CI information; notifying Secretarial Officers (SOs) when  specific actions must be taken to investigate and resolve S/CI quality and safety issues; and tracking and reporting the status of corrective actions. NOTE:  This service does not relieve the contractor from complying with the requirements defined in this CRD.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.	Supplemental Quality Management System Requirements for Suspect/Counterfeit Items.   An S/CI prevention process must be developed and implemented as a part of the contractor?s QAP and must be commensurate with the facility/activity hazards and mission impact.  The QAP must be applied to identifying, analyzing, and removing S/CIs and preventing them from being supplied to DOE/NNSA and its contractors.  The QAP must address the following elements for S/CI prevention.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(1)	Preventing the introduction and use of S/CIs through engineering involvement, design, procurement, testing, inspection, maintenance, evaluation, disposition, reporting, trend analysis, and lessons learned work process controls.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(2)	Training and informing managers, supervisors, and workers on S/CI processes and controls (including prevention, detection, and disposition of S/CIs).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(3)	Identifying and disposition of S/CIs onsite.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(4)	Restricting S/CI use to only those items that have been found acceptable through engineering analysis and formal disposition process.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(5)	Collecting, maintaining, disseminating, and using the most accurate, up-to-date information on S/CIs and associated suppliers using all available sources.   S/CI information include the following.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(5)(a)	Government-Industry Data Exchange Program (www.gidep.org).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(5)(b)	Institute of Nuclear Power Operations (www.inpo.org).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(5)(c)	DOE Occurrence Reporting and Processing System (http://www.eh.doe.gov/paa/orps.html).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(5)(d)	DOE S/CI Web site (http://www.eh.doe.gov/sci/).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.a.(6)	Identifying the management point of contact responsible for these activities to ensure that the DOE Office of Environment, Safety and Health has a viable recipient for S/CI information notices.                                                           
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.	Work Process Controls.  Work processes must be developed and implemented using available S/CI information and must include the following elements.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(1)	Engineering involvement in the development of procurement specifications; during inspection and testing; and when replacing, maintaining, or modifying equipment.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(2)	Procurement processes that prevent introduction of S/CIs by -
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(2)(a)	identifying technical and QA requirements in procurement specifications;
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(2)(b)	accepting only those items that comply with the procurement specifications consensus standards, and commonly accepted industry practices; and
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(2)(c)	inspecting inventory and storage areas to identify, control, and disposition S/CIs.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(3)	Inspection, identification, evaluation, and disposition of S/CIs installed in all safety applications(1) and other applications that create potential hazards. (1)  Safety applications are those whose failure could adversely affect the environment, safety, or health of the public or workers.  This term includes safety systems in nuclear facilities (see 10 CFR 830.2).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(4)	Engineering evaluations and disposition of S/CIs installed in safety applications/systems or in applications that create potential hazards.  The evaluations must consider potential risks to the public and worker and cost/benefit impact, and include a schedule for replacement (if required).
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(5)	Ensuring that S/CIs identified in non-safety applications during routine maintenance and/or inspection are reported, evaluated, and dispositioned to prevent future use in safety applications.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(6)	Contacting the DOE Inspector General (IG) before destroying or disposing of S/CIs and their documentation to determine whether to retain them for criminal investigation or litigation.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(7)	Testing procured or installed S/CIs as necessary using approved engineering test methods.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(8)	Reporting S/CIs as per DOE O 231.1A Change 1, Environment, Safety, and Health Reporting, dated 06-03-04, and DOE O 221.1, Reporting Fraud, Waste, and Abuse, dated 03-22-01, to -
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(8)(a)	the responsible DOE/NNSA line management offices;
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(8)(b)	the Office of Environment, Safety and Health; and
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(8)(c)	the Office of the Inspector General.
+sourcerequirement_id_seq.next	58	Attachment 2; 4.b.(9)	Conducting trend analysis and issuing lessons learned reports for use in improving the S/CI prevention.
+sourcerequirement_id_seq.next	58	Attachment 2; 5.	SAFETY SOFTWARE QUALITY REQUIREMENTS.  These requirements are necessary to ensure that DOE/NNSA safety software in nuclear facilities performs its intended specific functions in relation to structures, systems, or components (SSCs) and that the classification, design, and analysis associated with nuclear facility operations is correct.  These requirements complement those of 10 CFR 830 and provide detail for work associated with safety software that is conducted under the nuclear facility QAP compliant with 10 CFR 830. Work processes involving safety software must be developed and implemented using national or international consensus standards and must include the following elements.
+sourcerequirement_id_seq.next	58	Attachment 2; 5.a.	Facility design authority involvement in identifying software specification, acquisition, design, development, verification and validation (including inspection and test), configuration management, maintenance, and retirement.
+sourcerequirement_id_seq.next	58	Attachment 2; 5.b.	Identify, document, and maintain safety software inventory.
+sourcerequirement_id_seq.next	58	Attachment 2; 5.c.	Establish grading levels for safety software.   Document those grading levels in the QAP.
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.	Using the grading levels established and approved above, select and implement the applicable software QA work activities from the following list to ensure that safety software performs its intended functions.  ASME NQA-1-2000, Quality Assurance Requirements for Nuclear Facility Applications, or other national or international consensus standards that provide an equivalent level of quality assurance requirements as NQA-1-2000, must be used to implement these work activities.  The standards used must be specified by the user and approved by DOE.  DOE G 414.1-4 provides acceptable implementation strategies and appropriate standards for these work activities.
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(1)	Software project management and quality planning
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(2)	Software risk management
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(3)	Software configuration management
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(4)	Procurement and supplier management
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(5)	Software requirements identification and management
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(6)	Software design and implementation
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(7)	Software safety
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(8)	Verification and validation
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(9)	Problem reporting and corrective action
+sourcerequirement_id_seq.next	58	Attachment 2; 5.d.(10)	Training of personnel in the design, development, use and evaluation of safety software
+sourcerequirement_id_seq.next	58	Attachment 3	SUSPECT/COUNTERFEIT ITEMS PREVENTION
+sourcerequirement_id_seq.next	58	Attachment 3; 1.	DOE-WIDE SUSPECT/COUNTERFEIT ITEMS (S/CI) PREVENTION PROCESS.  The Department of Energy (DOE) Office of Environment, Safety and Health operates a DOE-wide S/CI prevention process as a service to DOE, including the National Nuclear Security Administration (NNSA) and its contractors.  The process for -
+sourcerequirement_id_seq.next	58	Attachment 3; 1.a.	collecting, analyzing, and disseminating S/CI information
+sourcerequirement_id_seq.next	58	Attachment 3; 1.b.	notifying Secretarial Officers (SOs) when specific actions must be taken to investigate and resolve S/CI quality and safety issues; and
+sourcerequirement_id_seq.next	58	Attachment 3; 1.c.	tracking and reporting the status of corrective actions. NOTE:  This service does not relieve organizations from complying with the requirements of this attachment.                                                                                                                                                                                 
+sourcerequirement_id_seq.next	58	Attachment 3; 2.	SUPPLEMENTAL QUALITY MANAGEMENT SYSTEM REQUIREMENTS FOR SUSPECT/COUNTERFEIT ITEMS.   An S/CI prevention process must be developed and implemented as a part of the organization?s quality assurance program (QAP) and commensurate with the facility/activity hazards and mission impact.  The QAP must be applied to identifying and analyzing S/CIs, removing them, and preventing S/CIs from being supplied to DOE/NNSA and its contractors.
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.	For guidance in compliance with requirements see DOE G 414.1-3, Suspect/Counterfeit Items Guide for Use with 10 CFR 830 Subpart A, Quality Assurance Requirements, and DOE O 414.1B, Quality Assurance, dated 11-03-04.  The QAP must address the following  for S/CI prevention:
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(1)	preventing the introduction and use of S/CIs through engineering involvement, design, procurement, testing, inspection, maintenance, evaluation, disposition, reporting, trend analysis, and lessons learned work process controls;
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(2)	training and informing managers, supervisors, and workers on S/CI processes and controls (including prevention, detection, and disposition of  S/CIs);
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(3)	identifying and disposing of S/CIs on site;
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(4)	restricting the use of an S/CI to only those items that have been found acceptance through engineering analysis and formal disposition process;
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(5)	collecting, maintaining, disseminating, and using the most accurate, up-to-date information on S/CIs and suppliers using all available sources including -
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(5)(a)	Government Industry Data Exchange Program (www.gidep.org);
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(5)(b)	Institute of Nuclear Power Operations (www.inpo.org);
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(5)(c)	DOE Occurrence Reporting and Processing System (http://www.eh.doe.gov/paa/orps.html); and
+sourcerequirement_id_seq.next	58	Attachment 3; 2.a.(5)(d)	DOE S/CI Web site (http://www.eh.doe.gov/sci/).
+sourcerequirement_id_seq.next	58	Attachment 3; 2.b.	Identifying the management position responsible for these activities and for serving as a point of contact with the Office of Environment, Safety and Health.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.	WORK PROCESS CONTROLS.  Work processes must be developed and implemented using available S/CI information and must include the following elements.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.a.	Engineering involvement in the development of procurement specifications during inspection and testing and when replacing, maintaining, or modifying equipment.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.b.	Procurement processes that prevent introduction of S/CIs by -
+sourcerequirement_id_seq.next	58	Attachment 3; 3.b.(1)	identifying technical and QA requirements to procurement specifications;
+sourcerequirement_id_seq.next	58	Attachment 3; 3.b.(2)	accepting only those items that comply with procurement specifications, consensus standards, and commonly accepted industry practices; and
+sourcerequirement_id_seq.next	58	Attachment 3; 3.b.(3)	inspecting inventory and storage areas to identify, control, and disposition S/CIs.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.c.	Inspection, identification, evaluation, and disposition of S/CIs that have been installed in safety applications (1) and other applications that create potential hazards. (1) Safety applications are those whose failure could adversely affect the environment, safety, or health of the public or workers.  This term includes safety systems in nuclear facilities (see 10 CFR 830.2).
+sourcerequirement_id_seq.next	58	Attachment 3; 3.d.	Engineering evaluations and disposition of S/CIs installed in safety applications/systems or in applications that create potential hazards.  Evaluations must consider potential risks to the public and workers cost/benefit impact, and a schedule for replacement (if required).
+sourcerequirement_id_seq.next	58	Attachment 3; 3.e.	Ensuring that S/CIs in non-safety applications identified during routine maintenance and/or inspection are reported, evaluated, and disposition to prevent future use in safety applications.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.f.	Contracting the DOE Inspector General (IG) before destroying or disposing of S/CIs and their documentation to determine whether to retain them for criminal investigation or litigation.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.g.	Testing procured or installed S/CIs as necessary using approved engineering test methods.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.h.	Reporting S/CIs as per DOE O 231.1A Change 1, Environment, Safety, and Health Reporting, dated 06-03-04, and DOE O 221.1, Reporting Fraud, Waste, and Abuse to the Office of Inspector General, dated 03-22-01, to -
+sourcerequirement_id_seq.next	58	Attachment 3; 3.h.(1)	the responsible DOE/NNSA line management offices;
+sourcerequirement_id_seq.next	58	Attachment 3; 3.h.(2)	the Office of Environment, Safety and Health; and
+sourcerequirement_id_seq.next	58	Attachment 3; 3.h.(3)	The Office of the Inspector General.
+sourcerequirement_id_seq.next	58	Attachment 3; 3.i.	Conducting trend analysis and issuing lessons learned reports for use in improving the S/CI prevention.
+sourcerequirement_id_seq.next	58	Attachment 4	CORRECTIVE ACTION MANAGEMENT PROGRAM
+sourcerequirement_id_seq.next	58	Attachment 4; 1.	OBJECTIVE.  To prescribe process requirements and responsibilities for Department of Energy (DOE) line managers to perform corrective actions that effectively resolve safety issues arising from -
+sourcerequirement_id_seq.next	58	Attachment 4; 1.a.	findings identified by the Office of Independent Oversight and Performance Assurance Environment, Safety, and Health (ES&H); and Emergency Management assessments (DOE O 470.2B, Independent Oversight and Performance Assurance Program, dated 10-31-02);
+sourcerequirement_id_seq.next	58	Attachment 4; 1.b.	judgments of need identified by Type A accident investigations (DOE O 225.1A, Accident Investigations, dated 11-26-97);
+sourcerequirement_id_seq.next	58	Attachment 4; 1.c.	findings identified by the Office of Aviation Management, Office of Management, Budget and Evaluation (DOE O 440.2B, Aviation Management and Safety, dated 11-27-02); or
+sourcerequirement_id_seq.next	58	Attachment 4; 1.d.	Other sources as directed by the Secretary or Deputy Secretary, including crosscutting safety issues.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.	REQUIREMENTS.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.a.	Reporting Findings.  The assessing organization (see paragraph 1) submits the final assessment report within 10 calendar days of issuance to the -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.a.(1)	appropriate field element managers (FEMs) and Secretarial Officers (SOs) and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.a.(2)	Office of ES&H along with a synopsis of assessment report findings.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.	Corrective Action Plan (CAP) Development, Approval, and Review.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)	Development.  The FEM in consultation with the appropriate SO must prepare a comprehensive CAP in writing to address assessment findings and field and Headquarters corrective actions for each finding.  Guidance for implementing these requirements is outlined in Volume 2, Appendix G, of DOE G 450-1B, Integrated Safety Management System Guide, dated 03-01-01. NOTE:  DOE O 470.2B, Independent Oversight and Performance Assurance Program, dated 10-31-02, includes additional CAP reporting requirements.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(a)	When findings and/or corrective actions to be addressed apply to more than one SO, a lead SO must be appointed by mutual agreement or be appointed by the Deputy Secretary to coordinate and approve the CAP.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(b)	When findings and/or corrective actions to be addressed involve multiple sites or organizations, to include DOE Headquarters organizations or other elements, the lead SO must designate a lead FEM as overall manager to coordinate and develop the CAP and track and report CAP data in the Corrective Action Tracking System (CATS) database.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(c)	Other responsible sites/organizations must forward their portions of the CAP to the designated lead FEM for consolidation and submission.  Failure to provide this information will be brought to the attention of the lead SO for action.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(d)	For each finding, the CAP must address -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(d)1	a thorough analysis of the underlying causal factors to determine whether systemic program weaknesses exit,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(d)2	steps to address the cause(s) of the finding,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(d)3	detailed descriptions of corrective action(s) to resolve each finding and prevent recurrence, and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(d)4	a general outline for the conduct of the proposed independent corrective action effectiveness review (see paragraph 2d below).
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)	For each corrective action the CAP must address -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)1	deliverable(s) that will signify completion,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)2	responsible individuals and organizations,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)3	dates actions will be initiated,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)4	dates actions are planned to be completed,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)5	how actions will be tracked to completion, and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(1)(e)6	mechanisms for independent verification of closure.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(2)	Approval.  The CAP must be prepared on a schedule that will allow for review and approval by the SO or designee within 60 calendar days from the date the transmittal forwarding the formal final assessment/investigation report was issued.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(2)(a)	The SO or designee must approve the CAP and all proposed corrective actions from responsible sites/organizations for each finding.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(2)(b)	When a finding addresses a deficiency in DOE policy, the applicable DOE policy organization (e.g., Office of Environment, Safety and Health, Office of Science) must develop and implement appropriate corrective actions.  Corrective actions must be included in the CAP addressing all other findings in the assessment report or a separate CAP must be developed by the policy organization for approval, tracking and reporting.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(2)(c)	Separate CAPs developed by a DOE policy organization must be approved by organization directors.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(2)(d)	When a proposed CAP cannot be submitted to the SO for approval within the required 60 days or the SO does not approve the proposed CAP, the DOE CATS User?s Guide outlines the formal process for requesting an extension from the SO.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(3)	Review.  The SO or designee must forward copies of an approved CAP to the organization that conducted the assessment for review and to the Office of ES&H.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(3)(a)	The organization that conducted the assessment must review the approved CAP and provide comments to the SO and FEM within 30 calendar days from the date the approved CAP was transmitted.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(3)(b)	The SO must evaluate comments from the organization that conducted the assessment and provide written response on how the comments will be addressed.  If the SO decides the CAP must be revised, the FEM must be notified to revise and resubmit the CAP for SO approval within a specified timeframe not to exceed 60 calendar days from the date the SO directed the revision.  The revised CAP must be submitted to the organization that conducted the assessment for review and a copy provided to the Office of ES&H.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.b.(3)(c)	Disagreements that cannot be resolved between the organization that conducted the assessment and the SO must be elevated through the organizational level of management hierarchy up to the Office of the Secretary, if necessary for resolution.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.	Tracking and Reporting Implementation.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(1)	The FEM -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(1)(a)	is responsible for implementing the approved CAP and ensuring timely and effective completion of all corrective actions;
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(1)(b)	must enter, track, and report the status of the CAP and associated corrective actions to closure in the DOE CATS database (see http://www.eh.doe.gov/catsentry.html and guidance for accessing and using CATS outlined in the DOE CATS User?s Guide and CATS Data Dictionary online at http://www.eh.doe.gov/camp/trackingsys.html);
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(1)(c)	must enter CAP corrective action data as stated in the approved CAP for each finding in CATS within 10 working days after approval; and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(1)(d)	must ensure that all corrective actions are tracked and their status reported to completion and verification.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(2)	Completion of each corrective action must be annotated in the CATS Descriptive Status and Completion Data fields.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(3)	Other sites/organizations that forwarded portions of the CAP and corrective actions to the lead FEM [see paragraph 2b(1)(c)] must track and provide the FEM updates of their portions of the CAP and corrective actions to completion and verification within the timeframes specified in this Order.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(4)	The FEM must update the CAP Status field and Corrective Action Descriptive Status fields on a frequent basis (e.g., monthly) and enter the date at the beginning of each update.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(5)	Requests for CAP changes in CATS (i.e., planned corrective action completion date) must be approved by the SO who approved the CAP and submitted as outline in the CATS Users Guide.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.c.(6)	Information in CATS will be used to provide periodic (e.g., quarterly) status reports to assist senior DOE management in monitoring the status of the CAMP.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.	Corrective Action Effectiveness Review.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(1)	Purpose.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(1)(a)	Evaluation of findings and implementation of corrective actions is conducted to correct the underlying causes for the finding.  In some instances completed corrective actions have failed to effectively resolve or prevent recurrence of the same or similar assessment findings.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(1)(b)	Effectiveness reviews will -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(1)(b)1	determine whether completed corrective actions have or have not effectively resolved and prevented recurrence of the same or similar findings at the performance level;
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(1)(b)2	identify additional actions necessary to effectively resolve the findings and prevent recurrence; and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(1)(b)3	collect effectiveness data for subsequent analyses and sharing of lessons learned.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)	Conduct of Effectiveness Reviews.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(a)	Upon completion of the corrective actions, the FEM must initiate a follow-up review of the completed corrective actions to verify they are closed, ensure all findings were effectively resolved, and ensure the same or similar findings will not recur.   A formal review report approved by the FEM must be completed within 6 months after the CAP completion date (the date when all corrective actions for all findings listed in the CAP have been completed). NOTE:  This requirement is effective on the approval date of this  Order for all CAPs that have not been approved but are not been approved, CAPs that have been approved but are not complete (all corrective actions in the CAP are not complete and there is not a CAP completion date), and all future CAPs.  The FEM will determine -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(a)1	how the review is conducted,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(a)2	who conducts the review,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(a)3	what specific completed corrective actions are reviewed for each finding,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(a)4	when the review is initiated, and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(a)5	how the review report will be formatted.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(b)	Other sites/organizations that tracked and provided updates of their responsible corrective actions to completion and verification must coordinate effectiveness review activities with the lead FEM for consolidation and submission.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)	For each finding, the FEM will select for review a sufficient number of completed corrective actions to allow an objective, accurate assessment of effectiveness in resolving the finding and preventing recurrence.  Standards for conducting effectiveness reviews include the following.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)1	A 100 percent review of all corrective actions is not required to determine effectiveness.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)2	Effectiveness reviews can be initiated at any time during CAP implementation.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)3	Reviews are initiated based on -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)3a	severity of a finding,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)3b	length of time needed to review selected corrective actions,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)3c	availability of resources to review corrective actions, and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)3d	length of time before all corrective actions for the finding are to be completed.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)4	Effectiveness reviews are performed by Federal and/or contractor personnel who are not associated with the findings or corrective actions.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5	Mechanisms used to conduct effectiveness reviews are determined by the FEM and may include -
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5a	document reviews,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5b	performance analyses,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5c	work observations/facility tours,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5d	performance testing,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5e	interviews,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5f	trending of performance,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5g	monitoring performance metrics based on operational data,
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5h	tracking performance utilizing targeted assessments, and
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(2)(c)5i	performing tailored scheduled assessments to gather the data.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)	Reporting and Follow-up.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(a)	A formal report documenting the results of the effectiveness review must be completed and approved by the FEM no later than 6 months after the CAP completion date (the date all corrective actions are completed).
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(b)	If the FEM determines that additional time is required to successfully complete the effectiveness review, the Effectiveness Review Approval Date field in the CAP Data section of CATS must be updated to read, "See CAP status."  Information on the status of the review and the revised planned approval date must be entered into the CAP Status field in the CAP Data section.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(c)	The report includes an executive summary outlining overall scope, results, conclusions, rating, and recommendations.  A separate report form for each finding describing which corrective actions were reviewed, review activities and results, conclusions, rating (i.e., effectively, partially effective, ineffective), and any recommendation for completion is to be attached to the executive summary.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(d)	FEM approval of the report must be recorded in the Effectiveness Review Approval Date field in the CAP Data section of CATS.  A description of the effectiveness review results and follow-up actions must be outlined in the Effectiveness Review Results field.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(e)	Upon FEM approval, report recommendations must be implemented and followed up as directed by the FEM.  The report and supporting documents must be retained in accordance with the local records management process.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(f)	If the FEM revises the completed CAP based on report recommendations, the CAP revision with additional or revised corrective actions, as applicable, must be approved by the SO.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.d.(3)(g)	Upon approval, CAP revisions must be entered into CATS and tracked to successful completion.  Guidance for entering the revisions is outlined in the CATS User's Guide.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.e.	Lessons Learned.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.e.(1)	At any time during the CAMP process, the FEM must develop and implement lessons learned identified from the assessment findings, corrective actions in response to the findings, and results of corrective action effectiveness reviews, as applicable.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.e.(2)	The FEM must evaluate proposed lessons learned to determine whether they are applicable to the wider DOE community and distribute the information to a select list of recipients through the DOE Lessons Learned Information Services Web site (http://tis.eh.doe.gov/ll).
+sourcerequirement_id_seq.next	58	Attachment 4; 2.f.	Corrective Action Management Team.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.f.(1)	The CAM Team, a cross-organizational working group of representatives from Headquarters and field offices, must be maintained to support and coordinate effective line management implementation of the CAMP.
+sourcerequirement_id_seq.next	58	Attachment 4; 2.f.(2)	A charter outlining mission, functions, operations, membership, and leadership of the team must be maintained.  The CAM Team is sponsored by the Office of ES&H and co-chaired by a SO representative and the Office of ES&H.
+sourcerequirement_id_seq.next	58	Attachment 5	SAFETY SOFTWARE QUALITY REQUIREMENTS
+sourcerequirement_id_seq.next	58	Attachment 5; 1.	OBJECTIVE.  To prescribe the following safety software requirements and responsibilities.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.a.	Grading software quality assurance (SQA) requirements based on risk, safety, facility life cycle, complexity, and project quality requirements.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.b.	Performing safety reviews of software configuration items that are consistent with DOE nuclear safety rules (10 CFR 830).
+sourcerequirement_id_seq.next	58	Attachment 5; 1.c.	Developing procurement controls for acquisition of computer software and hardware.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.d.	Applying SQA requirements to software life cycles.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.e.	Documenting and tracking customer requirements.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.f.	Managing software configuration throughout the life cycle.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.g.	Performing verification and validation.
+sourcerequirement_id_seq.next	58	Attachment 5; 1.h.	Training personnel in the design, development, use, and evaluation of safety software.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.	REQUIREMENTS.  Safety software quality requirements are necessary to ensure that   Department of Energy (DOE)/National Nuclear Security Administration (NNSA) safety software in nuclear facilities performs its intended specific safety functions in relation to structures, systems, or components (SSCs) and that the classification, design, and analysis associated with nuclear facility operations is correct.  These requirements complement those of 10 CFR  830 and provide detail for work associated with safety software that is conducted under the nuclear facility QAP compliant with 10 CFR 830.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.a.	Federal personnel with SQA responsibilities must have technical competency to carry out their duties.  Technical qualification requirements will be specified in technical qualification standards.  This process is coordinated with the Federal Technical Capability Panel (FTCP) in accordance with the requirements of DOE M 426.1-1A, Federal Technical Capability Manual, dated 5-18-04, and DOE-STD-1172-2003, Safety Software Quality Assurance Functional Area Qualification Standard, dated December 2003.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.b.	The Assistant Secretary for Environment, Safety, Health (ES&H) has lead responsibility for promulgating requirements and guidance for safety software through the Directives System after formal coordination with the Office of the Chief Information Officer (OCIO).  ES&H is also responsible for managing the safety software central registry for the Department (http://www.eh.doe.gov/sqa/central_registry.htm).
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.	Work processes involving safety software must be developed and implemented using national or international consensus standards and must include the following elements.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(1)	Facility design authority involvement in the identification of software requirements specification, acquisition, design, development, verification and validation (including inspection and testing), configuration management, maintenance, and retirement.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(2)	Identify, document, and maintain safety software inventory.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(3)	Establish grading levels for safety software.  Document those grading levels in the QAP.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)	Using the grading levels established and approved above, select and implement applicable SQA work activities from the following list to ensure that safety software performs its intended functions.  ASME NQA-1-2000, Quality Assurance Requirements for Nuclear Facility Applications, or other national or international consensus standards that provide an equivalent level of quality assurance requirements as NQA-1-2000, must be used to implement these work activities.  The standards used must be specified    by the user and approved by DOE.  DOE G 414.1-4 provides acceptable implementation strategies and appropriate standards for these work activities.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(a)	Software project management and quality planning.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(b)	Software risk management.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(c)	Software configuration management.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(d)	Procurement and supplier management.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(e)	Software requirements identification and management.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(f)	Software design and implementation.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(g)	Software safety.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(h)	Verification and validation.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(i)	Problem reporting and corrective action.
+sourcerequirement_id_seq.next	58	Attachment 5; 2.c.(4)(j)	Training of personnel in the design, development, use, and evaluation of safety software.

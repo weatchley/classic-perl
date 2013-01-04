@@ -1,0 +1,150 @@
+
+<html>
+<head>
+   <base target=main>
+   <title>Decision Management System</title>
+</head>
+
+<script src=/dms/javascript/utilities.js></script>
+<script src=/dms/javascript/widgets.js></script>
+
+<script language=javascript>
+<!--
+
+function verify_decisions (f){
+// javascript form verification routine
+  var msg = "";
+  if (msg != "") {
+    alert (msg);
+    return false;
+  }
+  return true;
+}
+
+function submitForm(script, command) {
+    document.decisions.command.value = command;
+    document.decisions.action = '/cgi-bin/dms/' + script + '.pl';
+    document.decisions.target = 'main';
+    document.decisions.submit();
+}
+
+//-->
+</script>
+
+<!--  topmargin=0 leftmargin=0 -->
+
+<body background=/dms/images/background.gif text=#000099 link=#0000ff vlink=#0000ff alink=#0000ff>
+<form name=decisions target=cgiresults onSubmit="return verify_decisions(this)" action="/cgi-bin/dms/decisions.pl" method=post enctype='multipart/form-data'>
+<input type=hidden name=username value=MUNROEB>
+<input type=hidden name=userid value=1002>
+<input type=hidden name=schema value=DMS>
+<input type=hidden name=command value=0>
+<input type=hidden name=decisionid value=YD-200201390>
+
+	<center>
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=0>
+	<TR><TD COLSPAN=2 BGCOLOR=#eeeeee><FONT FACE=ARIAL SIZE=5 COLOR=#000000><B>Decision Analysis</B></FONT></TD></TR>
+	<TR><TD COLSPAN=2><IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=20></TD></TR>
+	<!-- Main Header Table - Dynamic -->
+
+	<TR><TD NOWRAP WIDTH=120><FONT FACE=ARIAL COLOR=#000000><B>Decision No:</B></FONT></TD><TD WIDTH=630><FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>Title:</B></FONT></TD><TD><FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>Accession No:</B></FONT></TD><TD> <FONT FACE=ARIAL COLOR=#000000>&nbsp;</A></FONT> </TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>Keywords:</B></FONT></TD><TD><FONT FACE=ARIAL COLOR=#000000></FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>QA:</B></FONT></TD><TD><FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT></TD></TR>
+	</TABLE>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Selection Criteria Table -->
+
+	<table cellspacing=0 cellpadding=2 width=660 border=1 bordercolor=c0c0c0><tr><td bgcolor=#eeeeee><font face=arial size=3 COLOR=#000000><b>Selection Criteria</b></font></td></tr></table><table cellspacing=0 cellpadding=2 width=660 border=0><tr><td><img src=/dms/images/clear.gif width=50 height=10></td></tr>
+<tr><td><font face=arial COLOR=#000000><b>1 - </b></td></tr>
+<tr><td><font face=arial COLOR=#000000></td></tr>
+<tr><td><img src=/dms/images/clear.gif width=50 height=10></td></tr>
+<tr><td><font face=arial COLOR=#000000><b>2 - </b></td></tr>
+<tr><td><font face=arial COLOR=#000000></td></tr>
+<tr><td><img src=/dms/images/clear.gif width=50 height=10></td></tr>
+<tr><td><font face=arial COLOR=#000000><b>3 - </b></td></tr>
+<tr><td><font face=arial COLOR=#000000></td></tr>
+</table>
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Option Description Table -->
+
+	<table cellspacing=0 cellpadding=3 width=660 border=1 bordercolor=#c0c0c0><tr><td bgcolor=#eeeeee colspan=3><font face=arial size=3 COLOR=#000000><b>Option Description</b></font></td></tr><tr><td><img src=/dms/images/clear.gif width=20 height=1></td><td><font face=arial COLOR=#000000><b>Description</b></font></td><td><font face=arial COLOR=#000000><b>Selection Rationale</b></font></td></tr><tr><td valign=top><font face=arial COLOR=#000000><b>1</td><td valign=top><font face=arial COLOR=#000000>&nbsp;</td><td valign=top><font face=arial COLOR=#000000>&nbsp;</td></td></tr>
+<tr><td valign=top><font face=arial COLOR=#000000><b>2</td><td valign=top><font face=arial COLOR=#000000>&nbsp;</td><td valign=top><font face=arial COLOR=#000000>&nbsp;</td></td></tr>
+<tr><td valign=top><font face=arial COLOR=#000000><b>3</td><td valign=top><font face=arial COLOR=#000000>&nbsp;</td><td valign=top><font face=arial COLOR=#000000>&nbsp;</td></td></tr>
+</table>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Recommendation Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=1 BORDERCOLOR="#c0c0c0">
+	<TR><TD BGCOLOR="#eeeeee"><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Recommendation</B></FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000>
+	&nbsp;
+	</FONT></TD></TR>
+	</TABLE>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- References Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=1 BORDERCOLOR="#c0c0c0">
+	<TR><TD BGCOLOR="#eeeeee"><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>References</B></FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL SIZE=3 COLOR=#000000>
+	&nbsp;
+	</FONT></TD></TR>
+	</TABLE>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Attachements Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=1 BORDERCOLOR=#c0c0c0><TR><TD BGCOLOR=#eeeeee><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Attachment(s)</B></FONT></TD></TR><TR><TD align=left>
+	<table border=0><tr></tr>
+	<tr>&nbsp;</tr></table>
+	</td></tr></table>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Prepared By Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=0>
+	<TR><TD COLSPAN=2><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Prepared By:</B></FONT></TD></TR>
+	<TR><TD COLSPAN=2><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=20></TD></TR>
+	<TR><TD><IMG SRC=/dms/images/hr01.gif WIDTH=500 HEIGHT=2></TD><TD WIDTH=180><IMG SRC=/dms/images/hr01.gif WIDTH=140 HEIGHT=2></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>&nbsp;</B></FONT></TD><TD WIDTH=180><FONT FACE=ARIAL COLOR=#000000><B>Date</B></FONT></TD></TR>
+	</TD></TR>
+	</TABLE>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Approved By Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=0>
+	<TR><TD COLSPAN=2><FONT FACE=ARIAL COLOR=#000000><B>Approved By:</B></FONT></TD></TR>
+	<TR><TD COLSPAN=2><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=20></TD></TR>
+	<TR><TD><IMG SRC=/dms/images/hr01.gif WIDTH=500 HEIGHT=2></TD><TD WIDTH=180><IMG SRC=/dms/images/hr01.gif WIDTH=140 HEIGHT=2></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>&nbsp;</B></FONT></TD><TD WIDTH=180><FONT FACE=ARIAL COLOR=#000000><B>Date</B></FONT></TD></TR>
+	</TD></TR>
+	</TABLE>
+
+	</BODY>
+	</HTML>
+
+
+</form>
+
+<form name=viewattachment>
+<input type=hidden name=userid value=1002>
+<input type=hidden name=username value=MUNROEB>
+<input type=hidden name=schema value=DMS>
+<input type=hidden name=attachmentid value=0>
+<input type=hidden name=command value="">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Commitment Tracking Module of the OCRWM Nuclear Cultures System</TITLE>
+<META NAME="Template" CONTENT="D:\Program Files\Microsoft Office\Templates\NORMAL.DOT">
+</HEAD>
+<BODY>
+
+<FONT SIZE=2>
+<CENTER><H1>DOE Commitment Management Module of the OCRWM Nuclear Cultures System</H1>
+<BR><H2>Software Requirements Document</H2>
+</CENTER><BR>
+&nbsp;
+<BR><U>Overview
+</U>
+<P>The Commitment Management Module (DCMM) will organize all commitments that are made regarding OCRWM.  The commitments will be maintained solely in this module, and this module will be the single official source for information regarding commitments.  The data on these commitments will be gathered from existing databases, paper files and other electronic and non-electronic documents, and will be entered into the DCMM.  Once the data has been entered, the existing sources will cease to be used in favor of the DCMM.</P>
+<BR>
+&nbsp;
+<BR><U>Workflow
+<BR>
+<P></U>When correspondence or other communication comes in, it will be reviewed by the office that receives it for issues.  If it is determined that a piece of correspondence will result in an issue, an M&amp;O Commitment Coordinator established within that office will enter the issue, the originator, source information and functional discipline into the DCMM.  An M&amp;O Technical Lead will enter an estimate on costs and time that will be required to fulfill the commitment into the DCMM, and will notify the DOE Commitment Coordinator.
+</P>
+<P>The DOE Technical lead for the functional discipline will review the issue.  If the Technical Lead doesn’t recommend a commitment, then the entry in the DCMM will be marked &quot;Commitment not Recommended&quot;, otherwise the DOE Technical Lead will enter a recommendation, due date for completion and the name of the product(s) (EIS, SR, LA, etc.) which the commitment will affect into the DCMM.  In either case, the commitment is then passed to the DOE Commitment Manager for review and if they agree with the DOE TL, then recommendation is forwarded to the DOE Commitment Maker (DOE CMM) who will determine if a commitment is to be made based on the data presented.
+</P>
+<P>If the DOE Commitment Maker rejects the commitment, they will enter the rejection into DCMM and will notify the DOE Commitment Manager.  The DOE Commitment Manager will then send a letter to the originator notifying them of the decision.  The DOE Commitment Manager will then notify the DOE Commitment Coordinator who will in turn notify the M&amp;O Commitment Coordinator who will notify the M&amp;O Tech Lead that the possible commitment was rejected.
+</P>
+<P>If the DOE Commitment Maker approves the commitment, they will enter the approval into the DCMM and will notify the DOE Commitment Manager who will then write a commitment letter to the originator and will notify the DOE Commitment Coordinator of the approval of the commitment.  The DOE Commitment Coordinator will then enter the actual due date, the date of the commitment letter, the letter signor, the text of the commitment and the commitment date.  The DOE Commitment Coordinator will then notify the M&amp;O Commitment Coordinator who directs the M&amp;O Tech Lead to perform the action to fulfill the commitment.
+</P>
+<P>The M&amp;O Tech Lead will then complete the actions that are required to close the commitment and enters the actions taken into the DCMM.  Upon completion, the M&amp;O Tech Lead notifies the M&amp;O Commitment Coordinator who will enter any updated information into the DCMM.  The M&amp;O Commitment Coordinator will then notify the DOE Commitment Coordinator who will then notify the DOE Tech Lead and DOE Commitment Manager.
+</P>
+<P>The DOE Tech Lead and DOE Commitment Manager will review the commitment.  If either do not recommend closure of the commitment, the process is resubmitted through the DOE Commitment Coordinator to the M&amp;O Commitment Coordinator who will make an assignment to the M&amp;O Tech Lead for further work.  If both the DOE Commitment Manager and DOE Technical Lead recommend the commitment for closure, then the DOE Commitment Manager submits the recommendation for closure to the DOE Commitment Maker.
+</P>
+<P>The DOE Commitment Maker will review the information on the commitment and will either reject the commitment’s closure (thus sending the commitment back to the DOE Commitment Coordinator for further work), or will approve the closure.  When the DOE Commitment Maker approves the commitment for closure, they will notify the DOE Commitment Manager who will send a letter to the originator notifying them of the completed commitment.  The DOE Commitment Manager will also notify the DOE Commitment Coordinator who will close the commitment in the DCMM and will then notify the M&amp;O Commitment Coordinator who will then notify the M&amp;O Tech Lead. 
+</P>
+<P>&nbsp;
+<BR><U>Data Storage
+</U>
+<P>An organization (or person) writes a source document, which contains one or more issues.  These issues are potential commitments and may become actual commitments.  A commitment requires one or more responses, which are transmitted by letter to the originating organization.  The DCMM will store information about the organization, source document, issue, commitment, response and letter.
+</P>
+<P>Data stored for the originating organization (or person) will consist of:
+</P>
+<UL>
+<LI>Name of the organization or person including division or department information</LI>
+<LI>The parent organization</LI>
+<LI>Address information</LI>
+<LI>Telephone number</LI>
+<LI>Facsimile number</LI></UL>
+
+
+For each source document the DCMM will store:
+
+<UL>
+<LI>Accession number in the RIS</LI>
+<LI>Title of the document</LI>
+<LI>Signer of the document</LI>
+<LI>Email address of the signer</LI>
+<LI>Telephone number for the signer</LI>
+<LI>Category of the document (NWTRB, NRC, EIS CRD, etc.)</LI></UL>
+
+
+The data stored for each issue will be:
+
+<UL>
+<LI>Text of the issue taken directly from the source document</LI>
+<LI>The date the issue was entered into the system</LI>
+<LI>Functional discipline the issue falls under</LI></UL>
+
+
+The DCMM will be a repository of Commitment data.  A commitment record will store the following Information:
+
+<UL>
+<LI>Commitment identifier</LI>
+<LI>Due date for the commitment closure</LI>
+<LI>Status (open, closed, pending, etc)</LI>
+<LI>Date the commitment was made</LI>
+<LI>Comments</LI>
+<LI>Functional Discipline</LI>
+<LI>Date closed</LI>
+<LI>Product Field (EIS, SR, LA, CA, VA, PC)</LI>
+<LI>Estimate of time/costs required</LI>
+<LI>Recommendation for making commitment</LI>
+<LI>Rationale for making commitment</LI>
+<LI>Commitment approver</LI>
+<LI>Rationale for rejection of commitment</LI>
+<LI>Actions taken</LI>
+<LI>Rationale for resubmission (non-closure)</LI>
+<LI>Action Summary</LI>
+<LI>Action Plan</LI>
+<LI>WBS information</LI></UL>
+
+
+<P>A response may be a commitment, a rejection of the commitment request, a status update or other communication regarding a commitment (or potential commitment).  The DCMM will store the text of a response and the date it is written.
+</P>
+<P>One or more responses may be contained in a letter to the originating organization.  We will store the accession number of each letter, along with the date sent, addressee, signer and the date the letter is signed.
+</P>
+&nbsp;
+<BR><U>Data Input Methods
+</U>
+<P>New commitments will be input into the DCMM by Commitment Coordinators within each functional area via an entry form.  Additional data will be entered through interactive forms.  There is currently no requirement for data input from other applications or non-interactive sources.
+</P>
+&nbsp;
+<BR><U>Data Processing
+</U>
+<P>TBD
+</P>
+&nbsp;
+<BR><U>Reporting/Output
+</U>
+<P>TBD<BR>
+View(s) of existing commitments will need to be available in the format(s) provided by DOE. 
+</P>
+&nbsp;
+<BR><U>Replacement of sources of data
+</U>
+<P>The databases that provide the input to the DCMM may be replaced by the DCMM.  Therefore, the DCMM will need to encompass the complete functionality of each of these databases as well as any additional functionality needed to create a common interface between these sources.  This will include all databases, paper files and any other repositories of data on commitments.
+</P>
+&nbsp;
+<BR><U>OCRWM Nuclear Cultures System
+</U>
+<P>The DCMM will need to be connected to the OCRWM Nuclear Cultures System and will have to accept any restrictions defined by the system.  Some portions of the DCMM are precursors to components of the OCRWM Nuclear Cultures System.  These components are:
+</P>
+<UL>
+<LI>Users with their associated usernames, passwords and permissions</LI>
+<LI>Issues</LI>
+<LI>Source Documents</LI>
+<LI>Organizations</LI>
+<LI>WBS information</LI>
+<LI>Product Information</LI></UL>
+
+<P>These areas will need review for use with the OCRWM Nuclear Cultures System.  This review should be completed before the design of the DCMM is considered complete.
+</P>
+&nbsp;
+<BR><U>Users
+</U>
+<P>Users may have different levels of access depending on their need to read, create, modify or delete commitments.  A group of database administrators will have to be defined to maintain the DCMM.
+</P>
+<P>Users will have one of the following roles in the DCMM.
+</P>
+<UL>
+<LI>DOE Commitment Maker – 1 per site, can be delegated</LI>
+<LI>DOE Commitment Manager – 1 per site, can be delegated</LI>
+<LI>DOE Commitment Coordinator – 1 per site, can be delegated</LI>
+<LI>DOE Technical Lead – 1 per functional discipline (e.g. hydrology, geology, etc.)</LI>
+<LI>M&amp;O Commitment Manager – 1 per site, can be delegated</LI>
+<LI>M&amp;O Commitment Coordinator – 1 per category (e.g. NRC, NWTRB, IRSR, etc.)</LI>
+<LI>M&amp;O Technical Lead – 1 per functional discipline (e.g. hydrology, geology, etc.)</LI>
+<LI>Guest/Read Only Access – All OCRWM participants will have a minimum of this level of access.</LI></UL>
+
+
+&nbsp;
+<BR><U>Database System for Data Storage
+</U>
+<P>TBD&nbsp;(probably Oracle due to the future incorporation of this module into the much larger Nuclear Cultures System)
+</P>
+</FONT></BODY>
+</HTML>

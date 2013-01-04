@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> Decision Management System - Data Entry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<!-- ############################ -->
+<!-- $Source: /data/dev/rcs/dms/mockup/RCS/dataentry.html,v $ -->
+
+<!-- $Revision: 1.1 $ -->
+
+<!-- $Date: 2002/03/15 17:35:29 $ -->
+
+<!-- $Author: atchleyb $ -->
+
+<!-- $Locker:  $ -->
+
+<!-- $Log: dataentry.html,v $
+<!-- Revision 1.1  2002/03/15 17:35:29  atchleyb
+<!-- Initial revision
+<!-- -->
+<!-- ############################ -->
+
+<script src=/dms/javascript/utilities.js></script>
+
+<body background=/dms/images/background.gif bgcolor="#ffffff" link="#0000ff" vlink="#0000ff" alink="#0000ff" >
+<center>
+<br>
+
+<!-- Meta Data for Decision Package -->
+<table width="700" cellpadding="3" cellspacing="0" border="1">
+<tr><td bgcolor="#eeeeee"><font size="4"><b>Decision Package Status</b></font></td></tr>
+<tr><td bgcolor="#FFFFCC">
+<br>
+<ul>
+<li><font color="#ff0000">REQUIRED</font> - <a href="#soc">Missing Statement of Consideration</a></li>
+</ul>
+
+</td></tr>
+</table>
+
+<br><br>
+
+
+<!-- Meta Data for Decision Package -->
+<table width="700" cellpadding="3" cellspacing="0" border="1">
+<tr><td colspan="2" bgcolor="#eeeeee"><font size="4"><b>Primary Decision Information</b></font></td></tr>
+<tr><td width="150" align="right"><b>Decision ID:</b></td><td>YD-200203001</td></tr>
+<tr><td width="150" align="right"><b>Title:</b></td><td><input type="text" size="50"></td></tr>
+<tr><td width="150" align="right"><b>Accession #:</b></td><td><input type="text" size="50"></td></tr>
+<tr><td width="150" align="right"><b>Decision Type:</b></td><td><select><option>Key</option><option>Supporting</option></select></td></tr>
+<tr><td width="150" align="right"><b>QA:</b></td><td><select><option>Non QA</option><option>QA</option></select></td></tr>
+
+<!-- Keywords Layout region -->
+<tr><td width="150" align="right" valign="top"><b>Keywords:</b></td>
+
+<td>
+<table border="0" cellspacing="0" cellpadding="3">
+<tr><td rowspan="2"><select size=3 multiple><option>Dry Storage</option><option>Load Profiling</option><option>etc...</option></select></td><td align="center"><input type="button" value="Add ->"></td><td rowspan="2"><select size=3 multiple><option>----------------</option></select></td></tr>
+<tr><td align="center"><input type="button" value="<- Remove"></td></tr></table>
+</td></tr>
+<!-- End of Keywords Layout region -->
+
+<tr><td width="150" align="right"><b>Developed By:</b></td><td><select><option>Brian Munroe, Software Developer</option><option>Joe Bloe, Code Monkey</option></select>&nbsp;<a href=#>Add Person to List</a></td></tr>
+<tr><td width="150" align="right"><b>Decision Maker:</b></td><td><select><option>Russ Dyer, Project Manager</option><option>Joe Bloe, Code Monkey</option></select></td></tr>
+<tr><td width="150" align="right"><b>Decision Date:</b></td><td><select><option>Jan</option><option>Feb</option></select><select><option>01</option><option>02</option></select><select><option>2002</option><option>2003</option></select>&nbsp;<input type="checkbox">Decision Approved?</td></tr>
+
+</table>
+
+<br><br>
+<form name="testform">
+<!-- Executive Summary Information -->
+<table width="700" cellpadding="6" cellspacing="0" border="1">
+<tr><td bgcolor="#eeeeee"><font size="4"><b>Executive Summary Information</b></font></td></tr>
+<tr><td>
+
+<br>
+<a name="soc">
+<font size="4" color="#ff0000">Statement for Consideration:</font>
+<a href="javascript:expandTextBox(document.testform.soc, document.entryRemarks_button,'force',5);">
+<img name=entryRemarks_button border=0 src=/dms/images/expand_button.gif></a>
+<br>
+<textarea rows="5" cols="80" name="soc">
+
+</textarea>
+
+<br>
+<br>
+<hr>
+<br>
+
+<font size="4">Recommendation:</font>
+<a href="javascript:expandTextBox(document.testform.r, document.entryRecommend_button,'force',5);">
+<img name=entryRecommend_button border=0 src=/dms/images/expand_button.gif></a>
+
+<br>
+<textarea rows="5" cols="80" name="r">
+Continue, as planned, with four years of heating to be followed by a
+similar cooling period.  This includes the anticipated adjustments to the
+heater power in the near future to ensure smooth transition to the target
+drift-wall maximum temperature of 200C.  In addition, evaluation of DST
+enhancements will continue.  These include planning for the cooling phase
+in the near future, pending availability of resources, to allow for
+thorough consideration of all potential options to maximize the results of
+the test.  Options to be considered would include those below and others
+deemed appropriate given the Repository Safety Strategy (RSS) and
+evolution of the design.  Other enhancements will include periodic
+sidewall sampling in existing boreholes to gather mineralogic-petrologic
+data and conversion of a few chemistry boreholes into hydrology boreholes
+to obtain additional water samples.
+</textarea>
+
+<br>
+<hr>
+<br>
+<font size="4">Decision:</font>
+<br>
+<textarea rows="2" cols="80">
+Accept recommendation.
+</textarea>
+</td></tr>
+</table>
+
+<br><br>
+
+
+<!-- Decision Analysis Information -->
+<table width="700" cellpadding="6" cellspacing="0" border="1">
+<tr><td bgcolor="#eeeeee"><font size="4"><b>Decision Analysis Information</b></font></td></tr>
+<tr><td>
+<br>
+<font size="4"><b>Selection Criteria:</b></font>
+<br>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Criteria</b></td></tr>
+<tr><td><input type="text" size="2" value="1"></td><td><input type="text" size="70" value="Regulatory Need"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Selection Criteria Details:</b>
+<br>
+<textarea rows="3" cols="70">
+A specific regulation or commitment to analyze the consequences of autocatalytic criticality.
+</textarea>
+
+</td></tr>
+</table>
+
+<br>
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Criteria</b></td></tr>
+<tr><td><input type="text" size="2" value="2"></td><td><input type="text" size="70" value="High probability of occurance"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Selection Criteria Details:</b>
+<br>
+<textarea rows="3" cols="70">
+ Is the probability of occurance high enough to justify a full consequence analysis.
+</textarea>
+
+</td></tr>
+</table>
+
+<br>
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Criteria</b></td></tr>
+<tr><td><input type="text" size="2" value="3"></td><td><input type="text" size="70" value="Bang for the Buck"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Selection Criteria Details:</b>
+<br>
+<textarea rows="3" cols="70">
+Is the scope well written and well costed so that significant data is added to back up our technical bases at a low overall cost.
+</textarea>
+
+</td></tr>
+</table>
+
+<a href="#">Add Additional Selection Criteria</a>
+<br>
+<br>
+<hr>
+<br>
+<font size="4"><b>Option Description:</b></font>
+
+<br>
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Option Description</b></td></tr>
+<tr><td><input type="text" size="2" value="1"></td><td><input type="text" size="70" value="Commit to full work scope proposed by M&O/LANL.  Would give complete analysis of consequence of autocritical events."></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Option Selection Rationale:</b>
+<br>
+<textarea rows="3" cols="70">
+No current specific regulation to do so.  Probability of occurance so far calculated to be below threshold.  Work scope very expensive.
+</textarea>
+</td></tr>
+</table>
+
+<br>
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Option Description</b></td></tr>
+<tr><td><input type="text" size="2" value="2"></td><td><input type="text" size="70" value="No further work done or assumed needed"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Option Selection Rationale:</b>
+<br>
+<textarea rows="3" cols="70">
+Regulations or commitments may change. Probability may change based on design changes or maturing analyses. No option left to do work if needed in future.
+</textarea>
+</td></tr>
+</table>
+
+<br>
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Option Description</b></td></tr>
+<tr><td><input type="text" size="2" value="3"></td><td><input type="text" size="70" value="Hold work proposal and re-evaluate in FY'02-04 "></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Option Selection Rationale:</b>
+<br>
+<textarea rows="3" cols="70">
+Will have additional regulatory imput after SR and Part 63. Will know if probability analyses is acceptable. Will be able to streamline/focus workscope and possibly lower overall cost.
+
+</textarea>
+</td></tr>
+</table>
+<a href="#">Add Additional Option Descriptions</a>
+<br>
+<br>
+<hr>
+<br>
+
+<font size="4"><b>Recommendation:</b></font>
+<br>
+<textarea rows="3" cols="70">
+3. Hold proposal and re-evaluate in FY'02-04
+</textarea>
+
+<br>
+<br>
+<hr>
+<br>
+<font size="4"><b>References:</b></font>
+<br>
+<textarea rows="3" cols="70">
+M&O/LANL Autocatalytic Consequence Analysis Proposal
+</textarea>
+
+<br>
+<br>
+<hr>
+<br>
+<font size="4"><b>Attachments:</b></font>
+<br><br>
+<table cellspacing=0 cellpadding=3 border=0 width="400">
+<tr><td align=center valign=top><a href=#><img src=icons/32/doc.gif border=0></a></td><td align=center valign=top><a href=#><img src=icons/32/pdf.gif border=0></a></td><td align=center valign=top><a href=#><img src=icons/32/mdb.gif border=0></a></td></tr>
+<tr><td align=center valign=top><input type="checkbox"><font size=2><a href=#>analysis.doc</a></font></td><td align=center valign=top><input type="checkbox"><font size=2><a href=#>proposal.pdf</a></font></td><td align=center valign=top><font size=2><input type="checkbox"><a href=#>analysisdata.mdb</a></font></td></tr>
+</table>
+<br>
+<input type="button" value="Add Attachment"> <input type="button" value="Remove Selected Attachments">
+
+<hr>
+<br>
+<input type="checkbox"><b>Done with Data Entry?</b>
+<br>
+
+<br>
+<input type="button" value="Save Changes">
+<br>
+
+</td></tr></table>
+
+</form>
+</body>
+</html>

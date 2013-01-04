@@ -1,0 +1,283 @@
+<html>
+<head><title>CMS Production Moves Log</title></head>
+<body background=../images/background.gif text=#000080 topmargin=5 leftmargin=0><br>
+<h1 align=center>CMS Production Moves Log</h1>
+<center><img src=../images/multilin.gif width=720 height=5 border=0>
+<br><br>
+<table width=650 align=center cellspacing=0 cellpadding=5 border=1 bgcolor=white></center>
+<tr bgcolor=#abcfff><td><b>Date</td><td><b>Files Moved - Revision Number - Changes - Associated Change Requests</td></tr>
+<!-- tr valign=top><td></td><td></td></tr>
+<tr valign=top><td><font size=-1></td><td><font size=-1><li></td></tr -->
+<tr valign=top><td><font size=-1>1/21/2003</td><td><font size=-1>
+<li>CC_actionentry.pl - Revision 1.2 - Added use of manager type - CREQ00023
+<li>DOECMgr_firstresponse.pl - Revision 1.52 - Renamed date due to NRC to date due to originator; Made date due to originator optional - CREQ00024 - rework
+<li>browse.pl - Revision 1.25 - Changed date due to NRC with date due to originator - CREQ00024 - rework 
+<li>commitmentupdate.pl - Revision 1.31 -  Renamed "Date Due To NRC" to "Date Due To Originator"; Made date due to originator optional; Updated fulfillment date validation so it does not require approval when there is no prior fulfillment date - CREQ00024, CREQ00028
+
+</td></tr>
+<tr valign=top><td><font size=-1>1/10/2003</td><td><font size=-1>
+<li>Edit_Screens.pm - Revision 1.27 - Added conditional retrieval of managers to account for records w/o managers
+<li>MOCC_review.pl - Revision 1.60 - Made DOE Manager optional - CREQ00023 - rework
+<li>commitmentupdate - Revision 1.30 - Made DOE Manager optional - CREQ00023 - rework 
+</td></tr>
+<tr valign=top><td><font size=-1>01/03/2003</td><td><font size=-1>
+<li>DOECMgr_firstresponse.pl - Revision 1.51 - Added display and processing for date due to NRC - CREQ00024
+<li>DOEMgr_report.pl - Revision 1.3 - Reformatted data display, added filtering by status, fulfillment date, and DOE lead, added retrieval of DOE manager, added back the system ID - CREQ00022, CREQ00023, CREQ00026
+<li>DOE_report.pl - Revision 1.3 - Renamed column headings, moved system ID to the last column, added retrieval of DOE Manager - CREQ00023, CREQ00025, CREQ00026
+<li>Edit_Screens.pm - Revision 1.26 - Added NRC date and DOE manager display to commitment display functions - CREQ00023, CREQ00024
+<li>MOCC_review.pl - Revision 1.59 - Added display and processing of mandatory DOE manager for commitments - CREQ00023
+<li>ONCS_specific.pm - Revision 1.21 - Added NRC date and DOE manager retrieval to get_commitment_info - CREQ00023, CREQ00024
+<li>browse.pl - Revision 1.24 - Added browse commitments by DOE manager and NRC due date - CREQ00023, CREQ00024
+<li>commitmentupdate.pl - Revision 1.29 - Added display and processing of NRC due date and DOE manager - CREQ00023, CREQ00024
+<li>manmaint.pl - Revision 1.4 - Added type to manager retrieval to accommodate the new DOE manager role - CREQ00023
+<li>reports_module_main.pl - Revision 1.15 - added parameter to call to DOEMgr_report - CREQ00020
+<li>utilities.pl - Revision 1.31 - Added link to DOE manager utility screen - CR00023
+</td></tr>
+<tr valign=top><td><font size=-1>12/17/2002</td><td><font size=-1>
+<li>ad_hoc_reports.pl - Revision 1.20 - Corrected select query for issue source accession number - SCREQ00027 - defect.</td></tr>
+<tr valign=top><td><font size=-1>11/27/2002</td><td><font size=-1>
+<li>DOEMgr_report.pl - Revision 1.2 - Filtered data by status, implemented use of getHeading, updated data order in display - partial fulfillment of SCR00020, SCR00021
+<li>Edit_Screens.pm - Revision 1.25 - Added function getHeading to standardize form element and page headers - Partial fulfillment of SCR00021</td></tr>
+<tr valign=top><td><font size=-1>11/13/2002</td><td><font size=-1>
+<li>browse.pl - Revision 1.23 - fixed bug in date range validation - defect</td></tr>
+<tr valign=top><td><font size=-1>11/08/2002</td><td><font size=-1>
+<li>scrbrowse.pl - Revision 1.4 - updated script to refer to new SCM tables - internal enhancement
+<li>scrreport.pl - Revision 1.4 - updated script to refer to new SCM tables - internal enhancement</td></tr>
+<tr valign=top><td><font size=-1>11/05/2002</td><td><font size=-1>
+<li>commitmentpudate.pl - Revision 1.28 - updated CIRS text capture condition - enhansement</td></tr>
+<tr valign=top><td><font size=-1>10/25/2002</td><td><font size=-1>
+<li>DOEMgr_report.pl - Initial Revision - DOE Licensing Manager report format - fulfills SCR00020
+<li>oncs_page_header.pl - Revision 1.9 - removed pop-up warning on initial load - as a result of the Access data transfer, data in CMS is considered current
+<li>reports_module_main.pl - Revision 1.14 - added link to DOE Licensing Manager repot; enabled access to DOE Project Manager report - SCR00020</td></tr>
+<tr valign=top><td><font size=-1>10/11/2002</td><td><font size=-1>
+<li>browse.pl - Revision 1.22  - Updated source document display functionality - internal enhancement</td></tr>
+<tr valign=top><td><font size=-1>10/04/2002</td><td><font size=-1>
+<li>changepassword.pl - Revision 1.13 - Added "use strict;"
+<li>dcmm_maint.pl - Revision 1.22 - Added "use strict;"
+<li>manmaint.pl - Revision 1.2 - Added "use strict;"
+<li>organization_maint.pl - Revision 1.14 - Added "use strict;"
+<li>users_maint.pl - Revision 1.18 - Added "use strict;"
+<li>utilities.pl - Revision 1.28 - Added "use strict;" and DB  disconnect.
+</td></tr>
+<tr valign=top><td><font size=-1>09/25/2002</td><td><font size=-1>
+<li>CIRS_procs.pm - Initial Revision - Module containing functions used for external interface with CIRS
+<li>CMaker_decision.pl - Revision 1.48 - Added code for CIRS interface processing.
+<li>commitmentupdate.pl - Revision 1.27 - Added code for CIRS interface processing.
+<li>issueupdate.pl - Revision 1.19 - Added code for CIRS interface processing.</td></tr>
+<tr valign=top><td><font size=-1>07/15/2002</td><td><font size=-1>
+<li>DOE_report.pl - Initial Revision - DOE Senior Manager report format. Fulfills SCREQ00018.
+<li>ReportWriterPDF.pm - Initial Revision - Module supplying functionality needed for PDFlib reports implementation. Fulfills SCREQ00018.
+<li>commitmentupdate.pl - Revision 1.25 - Added fulfillment date update option. Fulfills SCREQ00018.
+<li>reports_module_main.pl - Revision 1.13 - Added link to DOE Senior Manager report. Feature is temporarily disabled pending data review. Fulfills SCREQ00018.</td></tr>
+<tr valign=top><td><font size=-1>06/25/2002</td><td><font size=-1>
+<li>users_maint.pl - Revision 1.17 - Added password reset option. Fulfills SCREQ00015.
+<li>ONCS_Utilities_Lib.pm - Revision 1.22 - Modified email notification procedure. Fulfills SCREQ00013.
+<li>enotify.pl - Initial Revision - Utility to allow System Administrator to enable and disable email notifications as necessary. Fulfills SCREQ00013.
+<li>utilities.pl - Revision 1.26 - added link to email notification utility. Fulfills SCR00013.</td></tr>
+<tr valign=top><td><font size=-1>03/08/2002</td><td><font size=-1>
+<li>ad_hoc_reports.pl - Revision 1.16 - Fixed bug in forward to login screen if displayed outside of frames. Updated header for cgi upgrade. Fulfills SCR00016.
+<li>browse.pl - Revision 1.19 - Fixed bug in forward to login screen if displayed outside of frames.
+<li>home.pl - Revision 1.20 - fixed bug in site retrieval placement.
+<li>oncs_page_header.pl - Revision 1.8 - Added pop-up for data notification on initial load.
+<li>search.pl - Revision 1.10 - Fixed forward to login screen when loaded outside frames. Updated header for cgi upgrade.</td></tr>
+<tr valign=top><td><font size=-1>02/06/2002</td><td><font size=-1>
+<li>ONCS_Utilities_Lib.pm - Revision 1.21 - Temporary suppression of email notification as per SCR00013</td></tr>
+<tr valign=top><td><font size=-1>12/18/2001</td><td><font size=-1>
+<li> BSC_report.pl - Revision 1.1 - BSC-requested supervisor report format, fulfills SCR00007 - Initial revision
+<li> BSC_summary_report.pl - Revision 1.1 - BSC-requested manager report format, fulfills SCR00007 - Initial revision
+<li> reports_module_main.pl - Revision 1.9 - Added links to the two new BSC report formats</td></tr>
+<tr valign=top><td><font size=-1>12/10/2001</td><td><font size=-1>
+<li> Edit_Screens.pm - Revision 1.23 - Updated commitment roles as per SCR00010
+<li> MOCC_review.pl - Revision 1.57 - Updated commitment roles as per SCR00010
+<li> MOFL_estimate.pl - Revision 1.55 - Updated commitment roles as per SCR00010
+<li> ONCS_Utilities_Lib.pm - Revision 1.20 - Updated email notification message as per SCR00009
+<li> browse.pl - Revision 1.18 - Updated commitment roles as per SCR00010
+<li> commitmentupdate.pl - Revision 1.24 - Updated commitment roles as per SCR00010
+<li> home.pl - Revision 1.19 - Updated commitment roles as per SCR00010</td></tr>
+<tr valign=top><td><font size=-1>11/16/2001</td><td><font size=-1>
+<li> CC_actionentry.pl - Revision 1.1 - Commitment Coordinator Action Entry Screen - Initial Revision; fulfills SCR00001, SCR000003-SCR00007
+<li> CMaker_closure_review.pl - Revision 1.43 - Added action display to commitment information
+<li> CMaker_decision.pl -  Revision 1.45 - Added action display to commitment information
+<li> DOECMgr_closeresponse.pl - Revision 1.41 - Added action display to commitment information
+<li> DOECMgr_closure_review.pl -  Revision 1.41 - Added action display to commitment information
+<li> DOECMgr_determination.pl - Revision 1.51 - Added action display to commitment information
+<li> DOECMgr_firstresponse.pl - Revision 1.50 - Added action display to commitment information, updated status and notification handling to reflect action addition
+<li> DOEFL_determination.pl - Revision 1.45 - Added action display to commitment information
+<li> DOEFL_fulfill_review.pl - Revision 1.43 - Added action display to commitment information
+<li> Edit_Screens.pm - Revision 1.22 - Added new role assignments, action display functionality
+<li> LL_action_review.pl - Revision 1.1 - Licensing Lead Action Review Screen - Initial Revision; fulfills SCR00001, SCR000003-SCR00007
+<li> MOCC_review.pl - Revision 1.56 - Updated email notifications to reflect action addition; updated role assignments; fulfills SCR00001, SCR000003-SCR00007
+<li> MOFL_estimate.pl - Revision 1.55 - Added action display to commitment information
+<li> MOFL_fulfillment.pl - Revision 1.43 - Added action display to commitment information
+<li> MO_action_fulfillment.pl - Revision 1.1 - Action Fulfillment Screen - Initial Revision; fulfills SCR00001, SCR000003-SCR00007 
+<li> ONCS_Utilities_Lib.pm - Revision 1.19 - Updated commitment info retrieval to reflect new roles; fulfills SCR00001, SCR000003-SCR00007
+<li> actionupdate.pl - Revision 1.1 - Action Update Screen - Initial Revision; fulfills SCR00001, SCR000003-SCR00007
+<li> browse.pl - Revision 1.17 - Added action browse, commitment roles, external ID; fulfills SCR00001 - SCR00006
+<li> commitmentupdate.pl - Revision 1.23 - Updated role assignments, added action display, added external id; fulfills SCR00001-SCR00007
+<li> dcmm_maint.pl - Revision 1.21 - removed restriction on BSC lead entry at discipline assignment
+<li> home.pl - Revision 1.18 - Added action entry and processing sections, email notification on action entry completion
+<li> role_maint_sel1.pl - Revision 1.11 - Added new roles; fulfills SCR000003-SCR00007
+<li> search.pl - Revision 1.9 - Added action search; partially fulfills SCR00001
+<li> stdrep2.pl - Revision 1.3 - Added BSC licensing leads to display
+<li> utilities.pl - Revision 1.21 - Added link to action update screen; partially fulfills SCR00001
+</td></tr>
+<tr valign=top><td><font size=-1>08/30/2001</td><td><font size=-1>
+<li> scrbrowse.pl - Revision 1.1 - SCR browse screen - Initial revision
+<li> scrhome.pl - Revision 1.1 - SCR entry screen - Initial revision
+<li> scrreport.pl - Revision 1.1 - SCR report screen - Initial revision
+<li> utilities.pl - Revision 1.20  - Added SCR entry for authorized users</td></tr>
+<tr valign=top><td><font size=-1>06/01/2001</td><td><font size=-1><li>log.pl - Revision 1.9 - Added error display to activity log; color-coded error text (displayed in red)</td></tr>
+<tr valign=top><td><font size=-1>05/31/2001</td><td><font size=-1><li>ONCS_Utilities_Lib.pm - Revision 1.17 - Updated Lynn Weishaar's contact information in the email notification</td></tr>
+<tr valign=top><td><font size=-1>05/17/2001</td><td><font size=-1><li>home.pl - Revision 1.16 - Incorporated the System Administrator role as superuser</td></tr>
+<tr valign=top><td><font size=-1>05/11/2001</td><td><font size=-1>
+<li> DOECMgr_determination.pl - Revision  1.50 - Removed references to privileges  
+<li> ONCS_Utilities_Lib.pm - Revision  1.16 - Added function for user role lookup     
+<li> Sections.pm - Revision  1.3 - Removed references to privileges
+<li> browse.pl - Revision  1.13 - Updated user browse; removed references to privileges, added System Administrator role                 
+<li> home.pl - Revision  1.15 - Removed references to privileges                   
+<li> oncs_page_header.pl - Revision  1.7 - Removed references to privileges
+<li> users_maint.pl - Revision  1.16 - Took out privileges assignment       
+<li> utilities.pl - Revision  1.18 - Added check for roles; removed references to privileges</td></tr>
+<tr valign=top><td><font size=-1>05/10/2001</td><td><font size=-1>
+<li> kti.pl - Revision 1.3 - Updated code to handle new categories and lead assignments</td></tr>
+<tr valign=top><td><font size=-1>05/08/2001</td><td><font size=-1>
+<li> CMaker_closure_review.pl - Revision  1.42 -  Modified evals, calls to Edit_Screens
+<li> CMaker_decision.pl - Revision 1.44  -  Modified evals, calls to Edit_Screens
+<li> DOECMgr_closeresponse.pl - Revision 1.40  -  Modified evals, calls to Edit_Screens
+<li> DOECMgr_closure_review.pl - Revision 1.40  - Modified evals, calls to Edit_Screens 
+<li> DOECMgr_determination.pl - Revision  1.49 - Modified evals, calls to Edit_Screens 
+<li> DOECMgr_firstresponse.pl - Revision 1.49  - Modified evals, calls to Edit_Screens 
+<li> DOEFL_determination.pl - Revision  1.44 -  Modified evals, calls to Edit_Screens
+<li> DOEFL_fulfill_review.pl - Revision 1.42  - Modified evals, calls to Edit_Screens 
+<li> Edit_Screens.pm - Revision 1.20  -  Code clean-up
+<li> MOCC_review.pl - Revision 1.54  -  Modified evals, calls to Edit_Screens
+<li> MOFL_estimate.pl - Revision 1.53  - Modified evals, calls to Edit_Screens 
+<li> MOFL_fulfillment.pl - Revision 1.42 - Modified evals, calls to Edit_Screens 
+<li> ONCS_Header.pm - Revision 1.15  - Took out hard-coded path to server 
+<li> ONCS_Utilities_Lib.pm - Revision 1.15  -  Added commit in log_activity function
+<li> ONCS_specific.pm - Revision 1.18  -  Added condition for first/final response on response retrieval
+<li> commitmentupdate.pl - Revision 1.21  - Modified evals, calls to Edit_Screens 
+<li> issueupdate.pl - Revision 1.17 - Modified evals 
+<li> log.pl - Revision 1.7  -Added filter by user to activities and error logs 
+<li> newissue.pl - Revision 1.28 - Modified evals
+</td></tr>
+<tr valign=top><td><font size=-1>04/17/2001</td><td><font size=-1>
+<li> ONCS_Header.pm - Revision 1.15 - Replaced hard-coded path to server</td></tr>
+<tr valign=top><td width=80><font size=-1>04/04/2001</td><td><font size=-1>
+<li> ONCS_Header.pm - Revision 1.14 - Updated server information
+<li> utilities.pl - Revision  1.17 - discipline add restricted to developers</td></tr>
+<tr valign=top><td><font size=-1>04/03/2001</td><td><font size=-1>
+<li> ONCS_Utilities_Lib.pm - Revision 1.14 - Changed email notification - direct questions to Lynn Weishaar instead of Sheryl Morris</td></tr>
+<tr valign=top><td><font size=-1>03/21/2001</td><td><font size=-1>
+<li> browse.pl - Revision 1.12 - added browse by important dates for issues and commitments, code clean-up 
+<li> report.pl - Initial Revision - new frame-based standard report format
+<li> reports_module_main.pl - Revision 1.7  - link to new report module
+<li> stdrep1.pl - Initial Revision - new frame-based standard report format 
+<li> stdrep2.pl - Initial Revision - new frame-based standard report format
+</td></tr>
+<tr valign=top><td><font size=-1>03/20/2001</td><td><font size=-1>
+<li> role_maint_sel1.pl - Revision  1.9 - automatic assignemnt of all categories for commitment coordinators 
+<li> role_maint_sel2.pl - Revision 1.9  - automatic assignemnt of all categories for commitment coordinators
+<li> role_maint_sel3.pl - Revision 1.10  - automatic assignemnt of all categories for commitment coordinators
+<li> users_maint.pl - Revision 1.15 - added log entry on user insert/update  
+<li> utilities.pl - Revision 1.16  - user maintenance restricted to developers</td></tr>
+<tr valign=top><td><font size=-1>3/14/2001</td><td><font size=-1>
+<li> dcmm_maint.pl - Revision 1.20 - added mandatory lead assignment on discipline entry</td></tr>
+<tr valign=top><td><font size=-1>3/13/2001</td><td><font size=-1>
+<li> commitmentupdate.pl - Revision 1.20 - bug fix</td></tr>
+<tr valign=top><td><font size=-1>03/12/2001</td><td><font size=-1>
+<li> MOCC_review.pl - Revision 1.52 - add lead assignment to commitmentrole table
+<li> commitmentupdate.pl - Revision 1.19 - add lead assignment to commitmentrole table</td></tr>
+<tr valign=top><td><font size=-1>03/06/2001</td><td><font size=-1>
+<li> home.pl - Revision 1.14 - changed M&O to BSC</td></tr>
+<tr valign=top><td><font size=-1>02/22/2001</td><td><font size=-1>
+<li> Edit_Screens.pm - Revision  1.19 - added RSS factor to commitment information     
+<li> MOCC_review.pl - Revision 1.51 - insert actual Commitment Coordinator in issue role table
+<li> MOFL_estimate.pl - Revision 1.51 - added RSS processing
+<li> ONCS_specific.pm - Revision 1.17 - added RSS factor to commitment information retrieval 
+<li> commitmentupdate.pl - Revision 1.16 - added RSS processing</td></tr>
+<tr valign=top><td><font size=-1>02/16/2001</td><td><font size=-1>
+<li> ONCS_specific.pm - Revision 1.16 - Added location and organization to user information retrieval
+<li> users_maint.pl - Revision 1.14 - Added location and organization fields
+</td></tr>
+<tr valign=top><td><font size=-1>2/15/2001</td><td><font size=-1>
+<li> ONCS_specific.pm - Revision 1.15 - Took out unused fields from commitment and source information retrieval
+<li> ad_hoc_reports.pl - Revision 1.14 - Interface update, removed unused firelds, added new fields
+<li> search.pl - Revision 1.8 - Added search of remarks for issues and commitments
+</td></tr>
+<tr valign=top><td><font size=-1>1/31/2001</td><td><font size=-1>
+<li> Edit_Screens.pm - Revision 1.18 - Added display of associated historical commitments, took out secondary discipline 
+<li> MOCC_review.pl - Revision 1.50 - Took out secondary discipline
+<li> browse.pl - Revision 1.11 - Added commitment text to search results, took out secondary discipline from details, added display of associated historical commitments to details
+<li> commitmentupdate.pl - Revision 1.15 - Took out secondary discipline
+<li> dcmm_maint.pl - Revision 1.19 - Took out discipline lead assignment
+<li> historicaladd.pl - Initial Revision
+<li> issueupdate.pl - Revision  1.16 - Fixed bug in source document processing  
+<li> newsource.pl  - Revision 1.3 - Took out source document category
+<li> sourceupdate.pl - Revision 1.6 - Took out source category
+<li> utilities.pl - Revision 1.14 - Added link to historical association
+</td></tr>
+<tr valign=top><td><font size=-1>01/04/2001</td><td><font size=-1>
+<li> DOECMgr_enterresponse.pl - Revision 1.15 - rewrite to use Edit_Screens module for letter information display
+<li> Edit_Screens.pm - Revision 1.17 - updated writeResponse function to work with response entry script
+</td></tr>
+<tr valign=top><td><font size=-1>01/02/2001</td><td><font size=-1>
+<li> CMaker_closure_review.pl - Revision 1.40 - Code clean-up
+<li> CMaker_decision.pl - Revision 1.42 - Code clean-up
+<li> DOECMgr_closeresponse.pl - Revision 1.37 - Code clean-up
+<li> DOECMgr_closure_review.pl - Revision 1.38 - Code clean-up
+<li> DOECMgr_determination.pl - Revision 1.47 - Code clean-up
+<li> DOECMgr_firstresponse.pl - Revision 1.46 - Code clean-up; moved letter processing to Edit_Screens module
+<li> DOEFL_determination.pl - Revision 1.42 - Code clean-up
+<li> DOEFL_fulfill_review.pl - Revision 1.40 - Code clean-up
+<li> Edit_Screens.pm  - Revision 1.16 - Added fillLetter function   
+<li> MOCC_review.pl - Revision 1.49 - Code clean-up
+<li> MOFL_estimate.pl - Revision 1.50 - Code clean-up         
+<li> MOFL_fulfillment.pl - Revision 1.40 - Code clean-up
+<li> browse.pl - Revision 1.9 - Added associated commitments to issue details
+<li> responseupdate.pl - Revision 1.5 - Moved letter processing to Edit_Screens module
+</td></tr>
+<tr valign=top><td><font size=-1>12/21/2000</td><td><font size=-1>
+<li> role_maint.pl - Revision 1.8 - Interface update
+<li> role_maint_sel1.pl - Revision 1.8 - Interface update
+<li> role_maint_sel2.pl - Revision 1.8 - Interface update
+<li> role_maint_sel3.pl - Revision 1.9 - Complete rewrite to enable multiple new assignments without deleting old assignments, unless specified
+<li>utilities.pl - Revision 1.13 - Added link to role maintenance
+</td></tr>
+<tr valign=top><td><font size=-1>12/19/2000</td><td><font size=-1>
+<li> CMaker_decision.pl - Revision 1.41 - Code clean-up
+<li> DOECMgr_closeresponse.pl - Revision 1.36 - Code clean-up
+<li> DOECMgr_closure_review.pl - Revision 1.37 - Code clean-up
+<li> DOECMgr_determination.pl - Revision 1.46 - Code clean-up
+<li> DOECMgr_firstresponse.pl - Revision 1.45 - Code clean-up
+<li> DOEFL_determination.pl - Revision 1.41 - Code clean-up
+<li> DOEFL_fulfill_review.pl - Revision 1.39 - Code clean-up
+<li> Edit_Screens.pm - Revision 1.15 - Minor tweaks and optimization
+<li> MOFL_estimate.pl - Revision 1.49 - Code clean-up
+<li> MOFL_fulfillment.pl - Revision 1.39 - Code clean-up
+<li> ONCS_specific.pm - Revision 1.14 - Bug fix - closing date retrieval for commitment
+<li> browse.pl - Revision 1.8 - Rearranged details display to match the workflow, merged all browseDetails and openWindow functions
+<li> commitmentupdate.pl - Revision 1.14 - Code clean-up
+<li> dcmm_maint.pl - Revision 1.19 - Changed wording of lead assignment
+<li> issueupdate.pl - Revision 1.14 - Updated log message
+<li> kti.pl - Revision 1.2 - Took out unused code
+<li> manager_report.pl - Revision 1.17 - Code optimization, changed column order, added sorting capabilities for all columns
+<li> utilities.pl - Revision 1.12 - Added link to KTI report (accessible to developers only)</td></tr>
+</table><br><br>
+<center><img src=../images/multilin.gif width=720 height=5 border=0><table width=650 align=center cellspacing=0 border=1 bgcolor=white></center><br><br>
+<CENTER>
+<TABLE  border=0 cellspacing=5 cellpadding=5>
+<TR><TD align=center><STRONG>[ <A HREF=/default.htm TARGET=_top>YMP Intranet Home</A>  |  
+<A HREF=../index.htm TARGET=_top>CMS Intranet Home</A>  |  
+<A HREF=javascript:history.back() TARGET=_top>Return to Previous Page</A> ]
+</STRONG></TD></TR>
+</TABLE>
+</CENTER>
+<CENTER><STRONG>Page Updated:  04/16/2001          <A HREF="mailto:IntranetWebmaster@ymp.gov">Contact YMP Intranet Webmaster</A></STRONG></CENTER>
+
+
+
+<br><br><br>
+</body>
+</html>
+

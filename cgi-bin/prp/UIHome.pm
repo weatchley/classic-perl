@@ -1,0 +1,513 @@
+# UI Home functions
+#
+# $Source: /usr/local/homes/gilmored/rcs/prp/perl/RCS/UIHome.pm,v $
+# $Revision: 1.12 $
+# $Date: 2009/02/06 19:52:09 $
+# $Author: gilmored $
+# $Locker: gilmored $
+#
+# $Log: UIHome.pm,v $
+# Revision 1.12  2009/02/06 19:52:09  gilmored
+# Add getCGI() to clean up getInitialValues() code
+#
+# Revision 1.9  2006/06/13 23:38:59  naydenoa
+# Replaced "Approve" with "Review for Approval" under CM section.
+#
+# Revision 1.8  2005/10/06 15:50:22  naydenoa
+# CREQ00065 - changed wording on home screen
+# Matrices: From define to master matrix
+# Matrices: From populate to enter/update links
+# Matrices: from qard to source/source to qard to nrc format/reverse format
+# AQAP: from add to new
+#
+# Revision 1.7  2005/09/28 16:27:04  naydenoa
+# Phase 3 implementation
+# Complete interface redesign
+# Added options for AQAP sections and matrices processing
+# Added option for QA management matrix review and approval
+#
+# Revision 1.6  2005/04/07 19:29:45  naydenoa
+# Add QAMP links - CREQ00047
+#
+# Revision 1.5  2004/12/15 23:54:00  naydenoa
+# Updated to include links to Table 1A and AQAP screens
+# (CREQ00024, CREQ00026, phase 2)
+#
+# Revision 1.4  2004/08/18 18:05:53  naydenoa
+# Minor cosmetic tweak on QARD dropdown display
+#
+# Revision 1.3  2004/08/18 17:52:18  naydenoa
+# CREQ00017 - updated link titles
+#
+# Revision 1.2  2004/06/15 23:14:09  naydenoa
+# Redesigned home screen to include updates and QARD functionality - p1, c2
+#
+# Revision 1.1  2004/04/22 20:38:35  naydenoa
+# Initial revision
+#
+#
+
+package UIHome;
+
+# get all required libraries and modules
+use strict;
+use SharedHeader qw(:Constants);
+use CGI;
+use DBUtilities qw(:Functions);
+use UI_Widgets qw(:Functions);
+use DBShared qw(:Functions);
+use UIShared qw(:Functions);
+use Text_Menus;
+use Tie::IxHash;
+use Tables;
+
+use vars qw(@ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $VERSION $AUTOLOAD);
+use integer;
+
+use Exporter;
+$VERSION = 1.00;
+
+@ISA = qw(Exporter);
+
+@EXPORT = qw ();
+@EXPORT_OK = qw(
+      &getInitialValues       &doHeader             &doFooter
+      &getTitle               &doMainMenu           &noPrivsNotice
+    );
+%EXPORT_TAGS =( 
+    Functions => [qw(
+      &getInitialValues       &doHeader             &doFooter
+      &getTitle               &doMainMenu           &noPrivsNotice
+    )]
+);
+
+my $mycgi = new CGI;
+
+
+##############
+sub getTitle {
+##############
+    my %args = (
+        @_,
+    );
+    my $title = "Home";
+    if ($args{command} eq "?") {
+        $title = "Home";
+    } 
+    elsif ($args{command} eq "?") {
+        $title = "Home";
+    }
+    return ($title);
+}
+
+######################
+sub getCGI {		# Fetch a CGI parm with default
+######################
+    my %args = ( @_, );
+    my $key = $args{key};
+    my $something = (defined ($mycgi -> param($key)) ? $mycgi -> param($key) : $args{dflt});
+    return ($something);
+}
+
+######################
+sub getInitialValues {  # routine to get CGI values and return in hash
+######################
+    my %args = (
+        dbh => "",
+        @_,
+    );
+    my %valueHash = (
+       &getStandardValues, (
+       command => getCGI(key => "command", dflt => ""),
+       loginusername => getCGI(key => "loginusername", dflt => "None"),
+       password => getCGI(key => "password", dflt => ""),
+       username => getCGI(key => "username", dflt => "GUEST"),
+       userid => getCGI(key => "userid", dflt => "0"),
+       schema => getCGI(key => "schema", dflt => "prp"),
+       id => getCGI(key => "id", dflt => ""),
+       rid => getCGI(key => "rid", dflt => ""),
+       aqaprid => getCGI(key => "aqaprid", dflt => ""),
+    ));
+    $valueHash{title} = &getTitle(command => $valueHash{command});
+    
+    return (%valueHash);
+}
+
+##############
+sub doHeader {  # routine to generate html page headers
+##############
+    my %args = (
+        dbh => '',
+        schema => $ENV{SCHEMA},
+        title => "$SYSType User Functions",
+        displayTitle => 'T',
+        @_,
+    );
+    my $outstr = "";
+    my $hashRef = $args{settings};
+    my %settings = %$hashRef;
+    my $form = $args{form};
+    my $path = $args{path};
+    my $username = $settings{username};
+    my $userid = $settings{userid};
+    my $Server = $settings{server};
+    
+    my $extraJS = "";
+    $extraJS .= <<END_OF_BLOCK;
+
+//***********************
+function doHome(script) {
+    $form.command.value = 'browse';
+    $form.action = '$path' + script + '.pl';
+    $form.submit();
+}
+//*******************************************
+function submitForm3(script, command, type) {
+    document.$form.command.value = command;
+    document.$form.type.value = type;
+    document.$form.action = '$path' + script + '.pl';
+    document.$form.target = 'main';
+    document.$form.submit();
+}
+//******************************************************
+function submitForm4(script, command, rid, qardtypeid) {
+    document.$form.command.value = command;
+    if (script == 'qard') {
+        document.$form.rid.value = rid;
+        document.$form.aqaprid.value = rid;
+    }
+    else if (script == 'source') {
+        if (command == 'enter') {
+            document.$form.sourceid.value = '';
+            document.$form.aqapsourceid.value = '';
+        }
+        else if (command == 'enter_matrix') {
+            document.$form.matrixid.value = '';
+            document.$form.aqapmatrixid.value = '';
+        }
+    }
+    document.$form.qardtypeid.value = qardtypeid;
+    document.$form.action = '$path' + script + '.pl';
+    document.$form.target = 'main';
+    document.$form.submit();
+}
+//***********************************************
+function submitFormT(script, command, isupdate) {
+    var msg = "";
+    msg += (document.$form.rid.value == "") ? "You must select a QARD revision.\\n" : "";
+    if (msg != "") {
+        alert (msg);
+    }
+    else {
+        document.$form.command.value = command;
+        document.$form.isupdate.value = isupdate;
+        document.$form.action = '$path' + script + '.pl';
+        document.$form.target = 'main';
+        document.$form.submit();
+    }
+}
+// **************************************************
+function submitFormAlert(script,command,qardtypeid,isupdate) {
+    var msg = "";
+    if (qardtypeid == 1) {
+        msg += (document.$form.rid.value == "" && (command == "enter_qard" || command == "enter_toc" || command == "enter_table" || command == "enter_section")) ? "You must select a QARD revision.\\n" : "";
+        msg += (document.$form.sourceid.value == "" && (command == "browse" || command == "enter")) ? "You must select a QARD source document.\\n" : "";
+        msg += (document.$form.matrixid.value == "" && (command == "enter_matrix" || command == "browse_matrix")) ? "You must select a QARD matrix.\\n" : "";
+    }
+    else if (qardtypeid == 2) {
+        msg += (document.$form.aqaprid.value == "" && (command == "enter_aqap" || command == "enter_section_aqap")) ? "You must select an AQAP revision.\\n" : "";
+        msg += (document.$form.aqapsourceid.value == "" && (command == "enter" || command == "browse")) ? "You must select an AQAP source document.\\n" : "";
+        msg += (document.$form.aqapmatrixid.value == "" && (command == "enter_matrix" || command == "browse_matrix")) ? "You must select an AQAP matrix.\\n" : "";
+    }
+    else if (qardtypeid == 0) {
+        msg += (document.$form.approvalmatrixid.value == "" && command == "approve_matrix") ? "You must select a compliance matrix to approve.\\n" : "";
+    }
+    if (msg != "") {
+        alert (msg);
+    }
+    else {
+        document.$args{form}.isupdate.value = isupdate;
+        document.$args{form}.qardtypeid.value = qardtypeid;
+        document.$args{form}.command.value = command;
+        document.$args{form}.action = '$args{path}' + script + '.pl';
+        document.$args{form}.target = 'main';
+        document.$args{form}.submit();
+    }
+}
+//*******************************************************************
+function submitFormSelectAlert(script,command,selection,qardtypeid) {
+    var msg = "";
+    msg += (document.$form.rid.value == "" && qardtypeid == 1) ? "You must select a QARD revision.\\n" : "";
+    msg += (document.$form.aqaprid.value == "" && qardtypeid == 2) ? "You must select an AQAP revision.\\n" : "";
+    if (msg != "") {
+        alert (msg);
+    }
+    else {
+        document.$args{form}.qardtypeid.value = qardtypeid;
+        document.$args{form}.command.value = command;
+        document.$args{form}.selection.value = selection;
+        document.$args{form}.action = '$args{path}' + script + '.pl';
+        document.$args{form}.target = 'main';
+        document.$args{form}.submit();
+    }
+}
+//***************************************************
+function submitFormSelect(script,command,selection) {
+    document.$args{form}.command.value = command;
+    document.$args{form}.selection.value = selection;
+    document.$args{form}.action = '$args{path}' + script + '.pl';
+    document.$args{form}.target = 'main';
+    document.$args{form}.submit();
+}
+END_OF_BLOCK
+
+    $outstr .= &doStandardHeader(dbh => $args{dbh}, schema => $args{schema}, title => $args{title}, displayTitle => $args{displayTitle}, 
+              settings => \%settings, form => $form, path => $path, extraJS => $extraJS, includeJSUtilities => 'F', includeJSWidgets => 'F');
+    
+    $outstr .= "<input type=hidden name=type value=0>\n";
+    $outstr .= "<table border=0 width=750 align=center><tr><td>\n";
+
+    return($outstr);
+}
+
+##############
+sub doFooter {  # routine to generate html page footers
+##############
+    my %args = (
+        @_,
+    );
+    my $outstr = "";
+    $outstr .= &doStandardFooter();
+    return($outstr);
+}
+
+################
+sub doMainMenu {  # routine to generate main report menu
+################
+    my %args = (
+        @_,
+    );
+    my $outstr = "";
+    my $message = '';
+    my $hashRef = $args{settings};
+    my %settings = %$hashRef;
+    my $key;
+    my $selected = "";
+
+    my $rid = $settings{rid} ? $settings{rid} : 0;
+    my $matrixid = $settings{matrixid} ? $settings{matrixid} : 0;
+
+    $outstr .= "<center>\n";
+    $outstr .= "<input type=hidden name=selection value=>\n";
+    $outstr .= "<input type=hidden name=qardtypeid value=>\n";
+    $outstr .= "<input type=hidden name=isupdate value=>\n";
+    $outstr .= "<br><table width=750 align=center cellpadding=10 cellspacing=5 border=3 bordercolor=#aaaaaa>\n";
+
+########  QARD
+    $outstr .= "<tr valign=top><td width=50%>\n";
+    $outstr .= "<table width=100% border=0>\n";
+   
+    $outstr .= "<tr><td><font size=+1 face=helvetica><b>QARD</b></font></td></tr>\n";
+    my ($tmpoutstr, $qardidlist) = &makeQARDDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "qardtypeid = 1 and isdeleted = 'F'", orderby => "iscurrent desc, revid desc", qardtype => "", rid => $rid, idlist => 1, separate => 1);
+    $outstr .= $tmpoutstr;
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[3, -1, 10])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Revision:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('qard','enter_qard','',1); title=\"Click to create new QARD revision\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','enter_qard',1,1); title=\"Click to update selected QARD revision\">Update</a></td></tr>\n";
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Table of Contents:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','enter_toc',1,0); title=\"Click to create new table of contents item for selected QARD revision\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormSelectAlert('qard','update_select','toc',1); title=\"Click to select table of contents item for selected QARD revision to update\">Update</a></td></tr>\n";
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Section:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','enter_section',1,0); title=\"Click to enter new section for selected QARD revision\">Enter</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormSelectAlert('qard','update_select','section',1); title=\"Click to select section from selected QARD revision to update\">Update</a></td></tr>\n";
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Table 1A:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','enter_table',1,0); title=\"Click to enter new row in QARD Table 1A\">Enter</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormT('qard','update_select_table'); title=\"Click to select QARD Table 1A row to update\">Update</a></td></tr>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+
+########  end QARD
+
+    $outstr .= "<tr><td>&nbsp;</td></tr>\n";
+
+########  QARD Source  ############
+
+    $outstr .= "<tr><td><font size=+1 face=helvetica><b>QARD Source Documents</font></td></tr>\n";
+    $outstr .= &makeSourceDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "isdeleted = 'F' and qardtypeid = 1", orderby => "typeid, designation", qardtype => "", sid => $settings{sid});
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[4, -1, 10])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Master Document:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('source','enter','',1); title=\"Click to create new QARD source document entry\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('source','enter',1,1); title=\"Click to update selected QARD source document\">Update</a></td></tr>\n";
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Criteria:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('requirement','enter',1,0); title=\"Click to enter criteria from QARD source document\">Enter</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('requirement','browse',1,1); title=\"Click to select criteria from selected QARD source document to update\">Update</a></td></tr>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+    $outstr .= "<tr><td>&nbsp;</td></tr>\n";
+
+#--- QARD Compliance Matrix ---#
+
+        $outstr .= "<tr><td><font size=4 face=helvetica><b>QARD Compliance Matrix</b></td></tr>\n";
+    $outstr .= &makeMatrixDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "qardid in $qardidlist and isdeleted = 'F'", orderby => "title", qardtype => "", matrixid => $matrixid);
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[7, -1, 10])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Master Matrix:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('source','enter_matrix','',1); title=\"Click to create new compliance matrix for selected QARD revision and QARD source document\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('source','enter_matrix',1,1); title=\"Click to update selected compliance matrix\">Update</a></td></tr>\n"; 
+
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Enter/Update Links:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('requirement','browse_matrix',1,1); title=\"Click to assign QARD requirements to source criteria for selected matrix\">NRC Format</a>\n";
+        $outstr .= "&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','browse_matrix',1,1); title=\"Click to assign source criteria to QARD requirements for selected matrix\">Reverse Format</a>\n";
+        $outstr .= "</td></tr>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+
+#--- end QARD Compliance Matrices ---#
+
+    $outstr .= "</table>\n";
+    $outstr .= "</td>\n"; 
+########  end QARD Source  #########
+
+########  end QARD  ###########
+
+
+########  AQAP  ############
+    $outstr .= "<td width=50%>\n";
+    $outstr .= "<table width=100% border=0>\n";
+
+    $outstr .= "<tr><td><font size=+1 face=Helvetica><b>AQAP</b></font></td></tr>\n";
+    my ($tempoutstr, $aqaprevidlist) = &makeQARDDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "qardtypeid = 2 and isdeleted = 'F'", orderby => "iscurrent desc, revid desc", qardtype => "aqap", rid => $settings{rid}, idlist => 1, separate => 1);
+    $outstr .= $tempoutstr;
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[5, -1, 10])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Revision:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('qard','enter_qard','',2); title=\"Click to add new AQAP revision to the database\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','enter_aqap',2,1); title=\"Click to update selected AQAP revision\">Update</a>\n";
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Section:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','enter_section_aqap',2,0); title=\"Click to enter new section for selected AQAP revision\">Enter</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormSelectAlert('qard','update_select_aqap','section',2); title=\"Click to select section for update from selected AQAP revision\">Update</a></td></tr>\n";
+        $outstr .= "<tr><td>&nbsp;</td></tr>\n";
+        $outstr .= "<tr><td>&nbsp;</td></tr>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+
+    $outstr .= "<tr><td>&nbsp;</td></tr>\n";
+
+########  AQAP Source  ########
+
+    $outstr .= "<tr><td><font size=+1 face=helvetica><b>AQAP Source Documents</font></td></tr>\n";
+    $outstr .= &makeSourceDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "qardtypeid = 2 and isdeleted = 'F'", orderby => "typeid, designation", qardtype => "aqap", sid => $settings{sid});
+#    $outstr .= &makeSourceDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "typeid in (5, 6) and isdeleted = 'F'", orderby => "typeid, designation", qardtype => "aqap", sid => $settings{sid});
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[4, -1, 10])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Master Document:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('source','enter','',2); title=\"Click to create new AQAP source document entry\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('source','enter',2,1); title=\"Click to update selected source document\">Update</a></td></tr>\n";
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Criteria:</b>&nbsp;&nbsp;<a href=javascript:submitFormAlert('requirement','enter',2,0); title=\"Click to enter criteria from source document for QARD compliance matrix population\">Enter</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('requirement','browse',2,1); title=\"Click to select criteria from selected AQAP source document to update\">Update</a></td></tr>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+        $outstr .= "<tr><td>&nbsp;</td></tr>\n";
+
+#--- AQAP Compliance Matrix ---#
+
+    $outstr .= "<tr><td><font size=4 face=helvetica><b>AQAP Compliance Matrix</b></td></tr>\n";
+    $outstr .= &makeMatrixDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "qardid in $aqaprevidlist and isdeleted = 'F'", orderby => "title", qardtype => "aqap", matrixid => $settings{id});
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[7, -1, 10])) {
+
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Master Matrix:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('source','enter_matrix','',2); title=\"Click to create new compliance matrix for selected AQAP revision and source document\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('source','enter_matrix',2,1); title=\"Click to update compliance matrix for selected AQAP revision and source document\">Update</a></td></tr>\n"; 
+
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Enter/Update Links:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('requirement','browse_matrix',2,1); title=\"Click to select criteria from source document to update\">NRC Format</a>\n";
+        $outstr .= "&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('qard','browse_matrix',2,1); title=\"Click to assign source criteria to AQAP requirements for selected matrix\">Reverse Format</a>\n";
+        $outstr .= "</td></tr>\n";
+
+#--- end AQAP Compliance Matrix ---#
+
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+    $outstr .= "</table>\n";
+
+########  end AQAP Source  #########
+
+    $outstr .= "</td>\n"; 
+
+########  end AQAP  ###########
+
+
+########  QAMP
+    $outstr .= "<tr valign=top><td width=50%>\n";
+    $outstr .= "<table width=100% border=0>\n";
+
+    $outstr .= "<tr><td><font size=+1 face=helvetica><b>QAMP</font></td></tr>\n";
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[5, -1, 10])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Revision:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('qard','enter_qamp','',3); title=\"Click to add new QAMP revision to the database\">New</a>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitForm4('qard','update_select_qamp','',3); title=\"Click to select QAMP revision for update\">Update</a>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+
+    $outstr .= "</table>\n";
+    $outstr .= "</td>\n"; 
+########  end QAMP
+
+########  CM Approval
+    $outstr .= "<td width=50%>\n";
+    $outstr .= "<table width=100% border=0>\n";
+
+    $outstr .= "<tr><td><font size=+1 face=helvetica><b>QA Compliance Matrix Approval</font></td></tr>\n";
+    $outstr .= &makeMatrixDropdown (dbh => $args{dbh}, schema => $args{schema}, where => "statusid = 1 and isdeleted = 'F'", orderby => "qardid desc, title", qardtype => "approval", matrixid => $settings{matrixid}, header => " To Approve");
+
+    if (&doesUserHavePriv(dbh=>$args{dbh}, schema=>$args{schema}, userid=>$args{userID}, privList=>[6, -1])) {
+        $outstr .= "<tr><td><font size=2 face=helvetica><li><b>Matrix:</b>&nbsp;&nbsp;\n";
+        $outstr .= "<a href=javascript:submitFormAlert('requirement','approve_matrix',0,1); title=\"Click to review/approve selected compliance matrix\">Review for Approval</a>\n";
+    }
+    else {
+        $outstr .= &noPrivsNotice;
+    }
+    $outstr .= "</table>\n";
+    $outstr .= "</td></tr>\n"; 
+########  end CM Approval
+
+#=cut
+    $outstr .= "</table>\n";
+    $outstr .= "</center>\n";
+    
+    return($outstr);
+}
+
+###################
+sub noPrivsNotice {
+###################
+    my $outstr = "<tr><td><br><font size=2>\n";
+    $outstr .= "* You do not have sufficient privileges to perform edits in this section. Contact a system administrator to request access.\n";
+#    $outstr .= " To find out who the system administrators are, go to Browse, select System Users, and click Submit.\n";
+    $outstr .= "</font></td></tr>\n";
+
+    return ($outstr);
+
+}
+
+###############
+1; #return true

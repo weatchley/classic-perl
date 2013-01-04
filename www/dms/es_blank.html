@@ -1,0 +1,126 @@
+
+<html>
+<head>
+   <base target=main>
+   <title>Decision Management System</title>
+</head>
+
+<script src=/dms/javascript/utilities.js></script>
+<script src=/dms/javascript/widgets.js></script>
+
+<script language=javascript>
+<!--
+
+function verify_decisions (f){
+// javascript form verification routine
+  var msg = "";
+  if (msg != "") {
+    alert (msg);
+    return false;
+  }
+  return true;
+}
+
+function submitForm(script, command) {
+    document.decisions.command.value = command;
+    document.decisions.action = '/cgi-bin/dms/' + script + '.pl';
+    document.decisions.target = 'main';
+    document.decisions.submit();
+}
+
+//-->
+</script>
+
+<!--  topmargin=0 leftmargin=0 -->
+
+<body background=/dms/images/background.gif text=#000099 link=#0000ff vlink=#0000ff alink=#0000ff>
+<form name=decisions target=cgiresults onSubmit="return verify_decisions(this)" action="/cgi-bin/dms/decisions.pl" method=post enctype='multipart/form-data'>
+<input type=hidden name=username value=MUNROEB>
+<input type=hidden name=userid value=1002>
+<input type=hidden name=schema value=DMS>
+<input type=hidden name=command value=0>
+<input type=hidden name=decisionid value=YD-200201390>
+
+	<BODY BGCOLOR=#ffffff LINK=#0000ff ALINK=#0000ff VLINK=#0000ff>
+	<!-- Main Header Table - Static -->
+
+	<center>
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=0>
+	<TR>
+
+	<TD COLSPAN=2 BGCOLOR=#eeeeee><FONT FACE=ARIAL SIZE=5 COLOR=#000000><B>Decision Package Executive Summary</B></FONT></TD>
+	</TR>
+	<TR><TD COLSPAN=2><IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=20></TD></TR>
+	<!-- Main Header Table - Dynamic -->
+
+	<TR><TD NOWRAP WIDTH=120><FONT FACE=ARIAL COLOR=#000000><B>Decision #:</B></FONT></TD><TD WIDTH=630><FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>Title:</B></FONT></TD><TD><FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>Accession No:</B></FONT></TD><TD> <FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT> </TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>Keywords:</B></FONT></TD><TD><FONT FACE=ARIAL COLOR=#000000></FONT></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>QA:</B></FONT></TD><TD><FONT FACE=ARIAL COLOR=#000000>&nbsp;</FONT></TD></TR>
+	</TABLE>
+
+	<IMG SRC=/dms/images/clear.gif WIDTH=50 HEIGHT=30>
+
+	<!-- Body Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=0>
+	<TR><TD><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Statement for Consideration:</B></FONT></TD><td align="right"><a href=#></a></td></TR>
+	<TR><TD VALIGN=TOP COLSPAN=2>
+	<FONT FACE=ARIAL COLOR=#000000>
+
+	</FONT>
+	</TD></TR>
+
+	<TR><TD COLSPAN=2><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=30></TD></TR>
+
+	<TR><TD><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Recommendation:</B></FONT></TD></TR>
+	<TR><TD VALIGN=TOP COLSPAN=2> <FONT FACE=ARIAL COLOR=#000000>
+	&nbsp;
+	</FONT>
+	</TD></TR>
+
+	<TR><TD><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=30></TD></TR>
+
+	<TR><TD><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Decision:</B></FONT></TD></TR>
+	<TR><TD VALIGN=TOP> <FONT FACE=ARIAL COLOR=#000000>
+	&nbsp;
+	</FONT>
+	</TD></TR>
+
+	<TR><TD><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=30></TD></TR>
+
+	<TR><TD><FONT FACE=ARIAL SIZE=3 COLOR=#000000><B>Attachments:</B></FONT></TD></TR>
+	<TR><TD VALIGN=TOP> <FONT FACE=ARIAL COLOR=#000000>
+	<P>
+	<LI>Decision Analysis</LI>
+	</P>
+	</TD></TR>
+	</TABLE>
+
+	<TR><TD><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=30></TD></TR>
+
+	<!-- Footer Table -->
+
+	<TABLE CELLSPACING=0 CELLPADDING=3 WIDTH=660 BORDER=0>
+	<TR><TD COLSPAN=2><FONT FACE=ARIAL COLOR=#000000><B>Approved By:</B></FONT></TD></TR>
+	<TR><TD COLSPAN=2><IMG SRC=/dms/images/clear.gif WIDTH=20 HEIGHT=20></TD></TR>
+	<TR><TD><IMG SRC=/dms/images/hr01.gif WIDTH=500 HEIGHT=2></TD><TD WIDTH=180><IMG SRC=/dms/images/hr01.gif WIDTH=100 HEIGHT=2></TD></TR>
+	<TR><TD><FONT FACE=ARIAL COLOR=#000000><B>&nbsp;</B></FONT></TD><TD WIDTH=180><FONT FACE=ARIAL COLOR=#000000><B>Date</B></FONT></TD></TR>
+
+	</TD></TR>
+	</TABLE>
+
+</form>
+
+<form name=viewattachment>
+<input type=hidden name=userid value=1002>
+<input type=hidden name=username value=MUNROEB>
+<input type=hidden name=schema value=DMS>
+<input type=hidden name=attachmentid value=0>
+<input type=hidden name=command value="">
+</form>
+
+</body>
+</html>

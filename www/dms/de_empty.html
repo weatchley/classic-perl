@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title> Decision Management System - Data Entry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<!-- ############################ -->
+<!-- $Source: /data/dev/rcs/dms/mockup/RCS/dataentry2.html,v $ -->
+
+<!-- $Revision: 1.1 $ -->
+
+<!-- $Date: 2002/03/15 17:35:44 $ -->
+
+<!-- $Author: atchleyb $ -->
+
+<!-- $Locker:  $ -->
+
+<!-- $Log: dataentry2.html,v $
+<!-- Revision 1.1  2002/03/15 17:35:44  atchleyb
+<!-- Initial revision
+<!-- -->
+<!-- ############################ -->
+
+<script src=/dms/javascript/utilities.js></script>
+
+<body background=/dms/images/background.gif bgcolor="#ffffff" link="#0000ff" vlink="#0000ff" alink="#0000ff" >
+<center>
+<br>
+
+<form name="testform">
+
+<!-- Meta Data for Decision Package -->
+<table width="700" cellpadding="3" cellspacing="0" border="1">
+<tr><td colspan="2" bgcolor="#eeeeee"><font size="4"><b>Primary Decision Information</b></font></td></tr>
+<tr><td width="150" align="right"><b>Decision ID:</b></td><td>In Process...</td></tr>
+<tr><td width="150" align="right"><b>Title:</b></td><td><input type="text" size="50"></td></tr>
+<tr><td width="150" align="right"><b>Accession #:</b></td><td><input type="text" size="50"></td></tr>
+<tr><td width="150" align="right"><b>Decision Type:</b></td><td><select><option>Key</option><option>Supporting</option></select></td></tr>
+<tr><td width="150" align="right"><b>QA:</b></td><td><select><option>Non QA</option><option>QA</option></select></td></tr>
+
+<!-- Keywords Layout region -->
+<tr><td width="150" align="right" valign="top"><b>Keywords:</b></td>
+
+<td>
+<table border="0" cellspacing="0" cellpadding="3">
+<tr><td rowspan="2"><select size=3 multiple><option>Dry Storage</option><option>Load Profiling</option><option>etc...</option></select></td><td align="center"><input type="button" value="Add ->"></td><td rowspan="2"><select size=3 multiple><option>----------------</option></select></td></tr>
+<tr><td align="center"><input type="button" value="<- Remove"></td></tr></table>
+</td></tr>
+<!-- End of Keywords Layout region -->
+
+<tr><td width="150" align="right"><b>Developed By:</b></td><td><select><option>Brian Munroe, Software Developer</option><option>Joe Bloe, Code Monkey</option></select>&nbsp;&nbsp;<a href=#>Add Person to List</a></td></tr>
+<tr><td width="150" align="right"><b>Decision Maker:</b></td><td><select><option>Russ Dyer, Project Manager</option><option>Joe Bloe, Code Monkey</option></select></td></tr>
+<tr><td width="150" align="right"><b>Date of Decision:</b></td><td><select><option>Jan</option><option>Feb</option></select><select><option>01</option><option>02</option></select><select><option>2002</option><option>2003</option></select>&nbsp;<input type="checkbox"> Approved by Decision Maker?</td></tr>
+
+</table>
+
+<br><br>
+
+<!-- Executive Summary Information -->
+<table width="700" cellpadding="6" cellspacing="0" border="1">
+<tr><td bgcolor="#eeeeee"><font size="4"><b>Executive Summary Information</b></font></td></tr>
+<tr><td>
+
+<br>
+<font size="4">Statement for Consideration:</font>
+<a href="javascript:expandTextBox(document.testform.soc, document.entryRemarks_button,'force',5);">
+<img name=entryRemarks_button border=0 src=/dms/images/expand_button.gif></a>
+
+<br>
+<textarea rows="5" cols="80" name="soc"></textarea>
+
+<br>
+<br>
+<hr>
+<br>
+
+<font size="4">Recommendation:</font>
+<a href="javascript:expandTextBox(document.testform.r, document.entryRecommend_button,'force',5);">
+<img name=entryRecommend_button border=0 src=/dms/images/expand_button.gif></a>
+
+<br>
+<textarea rows="5" cols="80" name="r"></textarea>
+
+<br>
+<hr>
+<br>
+<font size="4">Decision:</font>
+<br>
+<textarea rows="2" cols="80">
+
+</textarea>
+</td></tr>
+</table>
+
+<br><br>
+
+<!-- Decision Analysis Information -->
+<table width="700" cellpadding="6" cellspacing="0" border="1">
+<tr><td bgcolor="#eeeeee"><font size="4"><b>Decision Analysis Information</b></font></td></tr>
+<tr><td>
+<br>
+<font size="4"><b>Selection Criteria:</b></font>
+<br>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Criteria</b></td></tr>
+<tr><td><input type="text" size="2"></td><td><input type="text" size="70"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Selection Criteria Details:</b>
+<br>
+<textarea rows="3" cols="70"></textarea>
+<br>
+<br>
+
+</td></tr>
+<tr><td colspan="2" background="/dms/images/hr02.gif"></td></tr>
+</table>
+
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Criteria</b></td></tr>
+<tr><td><input type="text" size="2"></td><td><input type="text" size="70"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Selection Criteria Details:</b>
+<br>
+<textarea rows="3" cols="70"></textarea>
+<br>
+<br>
+
+</td></tr>
+<tr><td colspan="2" background="/dms/images/hr02.gif"></td></tr>
+</table>
+
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Criteria</b></td></tr>
+<tr><td><input type="text" size="2"></td><td><input type="text" size="70"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Selection Criteria Details:</b>
+<br>
+<textarea rows="3" cols="70"></textarea>
+
+</td></tr>
+</table>
+
+<a href="#">Add Additional Selection Criteria</a>
+<br>
+<br>
+<hr>
+<br>
+<font size="4"><b>Option Description:</b></font>
+
+<br>
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Option Description</b></td></tr>
+<tr><td><input type="text" size="2"></td><td><input type="text" size="70"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Option Selection Rationale:</b>
+<br>
+<textarea rows="3" cols="70">
+</textarea>
+<br>
+<br>
+
+</td></tr>
+<tr><td colspan="2" background="/dms/images/hr02.gif"></td></tr>
+</table>
+
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Option Description</b></td></tr>
+<tr><td><input type="text" size="2"</td><td><input type="text" size="70"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Option Selection Rationale:</b>
+<br>
+<textarea rows="3" cols="70">
+</textarea>
+<br>
+<br>
+
+</td></tr>
+<tr><td colspan="2" background="/dms/images/hr02.gif"></td></tr>
+</table>
+
+<br>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tr><td><b>#</b></td><td><b>Option Description</b></td></tr>
+<tr><td><input type="text" size="2"></td><td><input type="text" size="70"></td></tr>
+<tr><td colspan="2">
+<br>
+<b>Option Selection Rationale:</b>
+<br>
+<textarea rows="3" cols="70">
+</textarea>
+</td></tr>
+</table>
+<a href="#">Add Additional Option Descriptions</a>
+<br>
+<br>
+<hr>
+<br>
+
+<font size="4"><b>Recommendation:</b></font>
+<br>
+<textarea rows="3" cols="70">
+</textarea>
+
+<br>
+<br>
+<hr>
+<br>
+<font size="4"><b>References:</b></font>
+<br>
+<textarea rows="3" cols="70">
+</textarea>
+
+<br>
+<br>
+<hr>
+<br>
+<font size="4"><b>Attachments:</b></font>
+<br><br>
+
+<input type="button" value="Add Attachment"> <!-- <input type="button" value="Remove Selected Attachments"> -->
+<hr>
+<br>
+<input type="checkbox"><b>Done with Data Entry?</b>
+<br>
+
+<br>
+<input type="button" value="Save Changes">
+<br>
+
+</td></tr></table>
+</form>
+</body>
+</html>
